@@ -102,7 +102,10 @@
   display:flex;
   flex-direction: row;
 }
-.rating-stars{
+.small-box .title{
+  font-style:italic;
+}
+.small-box .rating-stars{
   display: inline-flex;
   margin-left: 2px;
 }
@@ -119,23 +122,142 @@
 }
 
 .info-box{
-  align-items: center;
-}
-.info-box .box-title{
-  font-size: 28px;
-}
-
-.info-box{
   width: 100%;
   border: 1px solid black;
   display: flex;
+  border-radius:4% ;
   justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.rating-progress-bar-container{
+  height:8px;
+  min-width:100%;
+  background-color: gray;
+  display: block; 
+}
+
+.rating-progress-bar-container .rating-progress-bar{
+  min-height:100%;
+  background-color:yellowgreen;
+}
+
+section{
+  width: 33.33%;
+  min-height:100%;
+  margin:24px;
+}
+
+.sections{
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+}
+
+.big-box{  
+  border: 1px solid black;
+  border-radius:4%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start; 
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.big-box .title{
+  font-size: 28px;
+}
+
+.star-counter{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.star-counter .rating-stars{
+  font-size: 28px;
+}
+
+.star-counter .rating-stars-filled{
+  color: gold;
+}
+
+.comment img{
+  height: 70px; 
+  border-radius: 50%;
+}
+
+.comments{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.comment{
+  display: flex ;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 12px;
+}
+
+.comment .user-section{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  gap:16px;
+}
+
+.user-section .name{
+  font-size:24px;
+  font-style:italic;
+}
+
+ .stars{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comment .content{
+  font-size:24px;
+  padding: 16px;
+}
+
+.top-selling-product img{
+  height:  100%; 
+}
+
+.top-selling{
+  display: flex;
+  text-align: center;
+
   flex-direction: column;
 }
 
-.left-section{
-  width: 33.33%;
-  height:100%;
-  margin:24px;
-  padding: 8px;
+.top-selling-product{
+  font-size: 24px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between; 
+  gap: 12px;
+}
+
+.product-info{
+  flex-direction: column;
+  display: flex;
+}
+.product-info .stars{
+  justify-content: center;
+}
+.right-section{
+  height: 100%;
 }
