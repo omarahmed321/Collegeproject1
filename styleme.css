@@ -1,0 +1,101 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 20px;
+  background-color: #FAF9F6;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-left{
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+
+} 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.general-btn {
+  background-color: white;
+  border: 1px solid black; 
+  border-radius: 8px;
+  /*multiples of 4 rule.*/ 
+  padding: 8px 16px; 
+  cursor: pointer; 
+}
+
+.invinsible-btn {
+  background: none;
+  border: 0;
+}
+
+.nav-img {
+    height: 70px; 
+    width: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.noback-btn {
+  border: 0;
+  background: none;
+  margin-bottom: 0; 
+  font-size: 28px; 
+  cursor: pointer;
+}
+
+.search-bar {
+  border-radius: 50px; 
+  width: 500px;
+  padding: 10px 20px; 
+  border: 1px solid black; 
+}
+
+
+.seller-id{
+  margin: 48px 48px;
+  display:flex;
+  align-items: center;
+  gap:24px;
+}
+
+.seller-id img{
+  border-radius: 50%;
+}
+
+#seller-name{
+  font-size:24px;
+  font-style:italic;
+}
+
+
+.small-box{
+  border-radius:4%;
+  border: 1px solid black;
+  flex-direction: column;
+  display:flex;
+  padding: 8px;
+  width:256px;
+  height:256px;
+}
+
+.seller-stats{
+  display: flex;
+  justify-content: space-between;
+  flex-direction:row;
+}
+
+.small-box .rating{
+  display:flex;
+  flex-direction: row;
+}
+.rating-stars{
+  display: inline-flex;
+  margin-left: 2px;
+}
+
