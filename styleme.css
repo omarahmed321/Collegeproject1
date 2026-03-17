@@ -1,10 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
 .nav {
+  margin-top:0 ;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 70px;
   padding: 0 20px;
-  background-color: #FAF9F6;
+  background-color: #8C5A3C;
   border-bottom: 1px solid #ddd;
 }
 
@@ -75,8 +86,8 @@
 
 
 .small-box{
-  border-radius:4%;
-  border: 1px solid black;
+  border-radius:1rem;
+  border: 1x solid rgba(0, 0, 0, 0.6);
   flex-direction: column;
   display:flex;
   padding: 8px;
@@ -125,23 +136,27 @@
   width: 100%;
   border: 1px solid black;
   display: flex;
-  border-radius:4% ;
+  border-radius:1rem ;
   justify-content: center; 
   flex-direction: column;
+  p{
+margin-bottom: 0;
+  }
   align-items: center;
 }
 
 
 .rating-progress-bar-container{
-  height:8px;
-  min-width:100%;
-  background-color: gray;
-  display: block; 
+ background-color: GREY;
+ width: 30px;
+min-width: 70%; 
+ height: 10px;
 }
 
 .rating-progress-bar-container .rating-progress-bar{
-  min-height:100%;
-  background-color:yellowgreen;
+background-color: greenyellow;
+ width: 40px;
+ height: 10px;
 }
 
 section{
@@ -158,13 +173,13 @@ section{
 
 .big-box{  
   border: 1px solid black;
-  border-radius:4%;
+  border-radius:1rem;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: flex-start; 
   flex-direction: column;
-  overflow: hidden;
+  
   padding: 12px;
 }
 
@@ -177,8 +192,10 @@ section{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+
+  
+ 
+
 }
 
 .star-counter .rating-stars{
@@ -233,6 +250,7 @@ section{
 
 .top-selling-product img{
   height:  100%; 
+  border-radius: 1rem;
 }
 
 .top-selling{
@@ -247,7 +265,7 @@ section{
 
 }
 .top-selling-product{
-  border-radius: 4%;
+  border-radius: 1rem;
   margin-bottom: 24px;
   padding: 12px;
   font-size: 24px;
@@ -262,10 +280,38 @@ section{
 .product-info{
   flex-direction: column;
   display: flex;
+ margin-right: 6rem;
+ margin-bottom: 2.5rem;
+p{
+  margin: 0;
 }
-.product-info .stars{
+  .stars{
   justify-content: center;
+  p{
+    margin: 0;
+  }
 }
+}
+
 .right-section{
   height: 100%;
+}
+
+.info-body{
+  ul{
+    li{
+      padding-right: 20px;
+    margin-top: 10px;
+    
+  list-style-position: inside;
+     
+    }
+  }
+}
+.star-counter{
+ 
+  
+  .stars{
+    min-width: 23%;
+  }
 }
