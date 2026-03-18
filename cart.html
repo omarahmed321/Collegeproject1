@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopping Cart</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="nav">
+
+    <div class="header-left">
+        <button id="hamburger" class="general-btn noback-btn">≡</button>
+        <img class="nav-img" src="cart resources/logo.png">
+    </div>
+
+    <div class="header-center">
+        <input type="text" class="search-bar" placeholder="Search products brands and categories">
+    </div>
+
+    <div class="header-right">
+        <button class="general-btn">Sign in/Up</button>
+        <button class="general-btn">Account</button>
+        <button class="general-btn">Cart</button>
+    </div>
+
+</header>
+
+<h1>Your Cart</h1>
+
+<div class="cart-container">
+
+    <div class="cart-items">
+
+        <div class="cart-item">
+            <div class="product">
+             <image src="https://picsum.photos/150/150" class="image"></image>
+                <div class="details">
+                    <h3>Product Name</h3>
+                    <br>
+                    <p><strong>price:$120</strong></p>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+                <button class="remove">Remove</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <div class="product">
+                <image src="https://picsum.photos/150/150" class="image"></image>
+
+                <div class="details">
+                    <h3>Product Name</h3>
+                    <br>
+                    <p><strong>price:$80</strong></p>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+                <button class="remove">Remove</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="summary">
+
+        <h2>Order Summary</h2>
+
+        <p>Subtotal: $200</p>
+        <p>Shipping: $10</p>
+        <p>Tax: $5</p>
+
+        <h3>Total: $215</h3>
+
+        <button class="checkout">Proceed to Checkout</button>
+
+    </div>
+
+</div>
+<br><br><br><br><br><br><br><br>
+<footer id="site-footer">
+
+    <a id="support-link" href="">Support</a>
+    &nbsp;&nbsp;
+    <a id="about-link" href="">About</a>
+
+</footer>
+
+</body>
+<script src="index.js"></script>
+</html>
