@@ -1,21 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- this is the nav bar -->
-      <header class="nav">
+     <div class="beforeNav"></div>
+    <header class="nav">
       <div class="header-left">
-        <button id="hamburger" class=" noback-btn"  onclick="appear()">≡</button>
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button>
 
-        <img class="nav-img" src="resources for home page/logo.png">
+        <img class="nav-img" src="resources for home page/logo.png" />
       </div>
       <div class="header-center">
-        <input type="text" class="search-bar" placeholder="Search products brands and categories">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search products brands and categories"
+        />
       </div>
 
       <div class="header-right">
@@ -23,88 +28,72 @@
         <button class="general-btn">Account</button>
         <button class="general-btn">Cart</button>
       </div>
-
     </header>
-<!-- ----------------------------------------------------- -->
-<!-- this is the modal  -->
-    <div class="modal-screen" >
-        <div class="sideBar" id="sideBar" >
-            <div class="menuButton">
-                <h2>Menu</h2>
-<button onclick="disappear()">X</button>
-            </div>
+    <!-- ----------------------------------------------------- -->
+    <!-- this is the modal  -->
+    <div class="modal-screen">
+      <div class="sideBar" id="sideBar">
+        <div class="menuButton">
+          <h2>Menu</h2>
+          <button onclick="disappear()">X</button>
+        </div>
 
-<button>Best Seller</button>
-<button>Comparison</button>
-<button>Orders</button>
-<button>Categories</button>
-</div>
-
+        <button>Best Seller</button>
+        <button>Comparison</button>
+        <button>Orders</button>
+        <button>Categories</button>
+      </div>
     </div>
-<!-- ----------------------------------------------------- -->
+    <!-- ----------------------------------------------------- -->
 
     <!-- this is the main content -->
-<div class="heroSection">
-    <!-- this is the hero banner for promotional content -->
-    <div class="banner">
-       <button class="arrow left-arrow" onclick="slide(-1)">‹</button>
+    <div class="heroSection">
+      <!-- this is the hero banner for promotional content -->
+      <div class="banner">
+        <button class="arrow left-arrow" onclick="slide(-1)">‹</button>
 
-    <div class="slider">
-        <div class="slide" src="" width="100" style="background-color: red;"></div>
-        <div class="slide"src="" width="100" style="background-color: white; "></div>
-        <div class="slide"src="" width="100" style="background-color: blue;"></div>
+        <div class="slider">
+          <div
+            class="slide"
+            src=""
+            width="100"
+            style="background-color: red"
+          ></div>
+          <div
+            class="slide"
+            src=""
+            width="100"
+            style="background-color: white"
+          ></div>
+          <div
+            class="slide"
+            src=""
+            width="100"
+            style="background-color: blue"
+          ></div>
+        </div>
+
+        <button class="arrow right-arrow" onclick="slide(1)">›</button>
+      </div>
+
+      <!-- row of elements 1 -->
+      <div class="elements el1">
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+      </div>
+      <!-- row of elements 2 -->
+      <div class="elements el2">
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+      </div>
+      <!-- block of elements -->
     </div>
+  </body>
 
-<button class="arrow right-arrow" onclick="slide(1)">›</button>
-</div>
-
-    
-
-    <!-- row of elements 1 -->
- <div class="elements el1">
-       <div class="element">
-        
-    </div>
-    <div class="element">
-
-    </div>
-    <div class="element">
-
-    </div>
-    <div class="element">
-
-    </div>
- </div>
- <!-- row of elements 2 -->
- <div class="elements el2">
-       <div class="element">
-        
-    </div>
-    <div class="element">
-
-    </div>
-    <div class="element">
-
-    </div>
-    <div class="element">
-
-    </div>
- </div>
- <!-- block of elements -->
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-<script src="home.js"></script>
+  
+  <script src="home.js"></script>
 </html>
