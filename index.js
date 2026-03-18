@@ -1,3 +1,6 @@
+
+
+//Shared
 // modal 
 let sideBar = document.querySelector("#sideBar");
 let modalOverlay = document.querySelector(".modal-screen");
@@ -22,7 +25,7 @@ modalOverlay.addEventListener("click", (e) => {
     disappear();
   }
 });
-
+// Home
 // slider-hero section
 let index = 0;
 let slider = document.querySelector('.slider');
@@ -34,3 +37,4 @@ let slide = (direction) => {
     if (index >= slides.length) index = 0;
     slider.style.transform = `translateX(-${index * 100}%)`;
 }
+//

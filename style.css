@@ -544,8 +544,172 @@
     }
   }
 }
+/* -----------------------------------------Product page------------------------------------------------ */
 
-/* --- Footer --- */
+
+#product-page {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "product sidebar"
+    "reviews sidebar";
+  gap: 0 30px;
+  padding: 0 30px;
+
+  #product-section {
+    grid-area: product;
+    padding-top: 30px;
+
+    .product-container {
+      display: flex;
+      gap: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
+.product-info {
+  display: flex;
+  gap: 40px;
+
+  .product-text {
+    flex: 2;
+
+    #product-title {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    #product-description {
+      margin-top: 0;
+      color: #555;
+      line-height: 1.6;
+    }
+  }
+}
+
+#sell {
+  flex: 1;
+  padding: 30% 20px 20px 20px;
+  border-radius: 8px;
+  height: fit-content;
+
+  .price-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+}
+ 
+
+.product-actions {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  button {
+    width: 100%;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+  }
+}
+
+
+#reviews-section {
+  grid-area: reviews;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .reviews-summary {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+  }
+
+  .top-reviews {
+    padding-left: 20px;
+
+    .review {
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+
+    }
+  }
+}
+ 
+
+#related-products {
+  grid-area: sidebar;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+  padding-top: 30px;
+
+  #relate-products {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    }  }
+.products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .product-card {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 4px;
+    .product-card-image {
+      width: 80px;
+      height: 80px;
+      object-fit: fill;
+    }
+    .product-card-title {
+      font-weight: bold;
+      margin: 0;
+    }
+    .product-card-price {
+      color: green;
+      margin: 5px 0 0 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* animations */
 @keyframes barFill {
