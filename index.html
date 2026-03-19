@@ -9,21 +9,26 @@
   <body>
     <!-- this is the nav bar -->
     <div class="beforeNav"></div>
-    <header class="nav">
+     <header class="nav">
       <div class="header-left">
         <button id="hamburger" class="noback-btn" onclick="appear()">≡</button>
 
         <img class="nav-img" src="resources for home page/logo.png" />
       </div>
-      <div class="header-center">
+     
         <input
           type="text"
           class="search-bar"
           placeholder="Search products brands and categories"
         />
-      </div>
-
+     
       <div class="header-right">
+            <div class="toggle-switch" >
+  <label class="switch-label"  >
+    <input type="checkbox" class="checkbox" onclick="toggle()" >
+    <span class="slider" ></span>
+  </label>
+</div> 
         <button class="general-btn">Sign in/Up</button>
         <button class="general-btn">Account</button>
         <button class="cartBtn" ><a href="cart.html"><img src="resources for home page/shopping-cart.png" alt=""></a></button>
