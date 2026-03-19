@@ -525,9 +525,10 @@ body {
       }
 
       #seller-name {
-        font-size: 24px;
+        font-size: 60px;
         font-style: italic;
         margin: 0.83em 0; /* Added default Heading margin */
+        
       }
     }
 
@@ -798,6 +799,19 @@ body {
     .product-info {
       display: flex;
       gap: 40px;
+#seller-name {
+        margin-top: 20px;
+        color: #606060;
+        text-decoration: none;
+        margin-right: auto;
+        margin-left: auto;
+          &:hover {
+        color: #454545;
+        text-decoration: underline;
+      }
+      }
+
+  
 
       .product-text {
         flex: 2;
