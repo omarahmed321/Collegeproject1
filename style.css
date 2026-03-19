@@ -280,7 +280,6 @@ body{
     z-index: 100;
     top: 0px;
     left: -250px;
-
     transition-duration: 500ms;
     width: 10%;
     height: 100vh;
@@ -292,6 +291,8 @@ body{
       align-items: center;
       display: flex;
       flex-direction: row;
+      position: relative;
+    z-index: 60;
       h2 {
         padding: 1rem;
       }
@@ -300,6 +301,9 @@ body{
         margin-left: 3.5rem;
         width: 30px;
         height: 30px;
+           position: absolute;
+      z-index: 500;
+      right:15px;
       }
     }
 
