@@ -32,7 +32,7 @@
       <div class="header-right">
         <button class="general-btn">Sign in/Up</button>
         <button class="general-btn">Account</button>
-        <button class="general-btn">Cart</button>
+        <button class="cartBtn" ><a href="cart.html"><img src="resources for home page/shopping-cart.png" alt=""></a></button>
       </div>
     </header>
     <!-- ----------------------------------------------------- -->
@@ -51,13 +51,30 @@
       </div>
     </div>
 
-<h1>Your Cart</h1>
+<h1 style="margin-bottom: 60px; margin-top: 40px; margin-left: 20px;">Your Cart</h1>
 
 <div class="cart-container">
 
     <div class="cart-items">
 
         <div class="cart-item">
+            <div class="product">
+             <image src="https://picsum.photos/150/150" class="image"></image>
+                <div class="details">
+                    <h3>Product Name</h3>
+                    <br>
+                    <p><strong>price:$120</strong></p>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+                <button class="remove">Remove</button>
+            </div>
+        </div>
+          <div class="cart-item">
             <div class="product">
              <image src="https://picsum.photos/150/150" class="image"></image>
                 <div class="details">
@@ -145,4 +162,5 @@
 
 </body>
 <script src="index.js"></script>
+<script src="script.js"></script>
 </html>

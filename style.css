@@ -127,19 +127,109 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    .general-btn {
-      background-color: white;
-      border: 1px solid black;
-      border-radius: 8px;
-      /*multiples of 4 rule.*/
-      padding: 8px 16px;
-      cursor: pointer;
-    }
+
+
+
+
+
+
+
+
+.cartBtn {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+
+  transition-duration: 500ms;
+  a{
+   img{
+    width: 30px;
+  }
+  }
+ 
+}
+
+
+.cartBtn::after {
+  content: none;
+}
+
+
+.cartBtn:hover {
+  opacity: 0.5;
+  transition-duration: 500ms;
+}
+
+
+.cartBtn:focus {
+  opacity: 0.5;
+}
+button {
+  
+  font-size: 17px;
+  color: white;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+
+
+}
+
+button:focus,
+button:hover {
+  color: #fff;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
   }
 }
 /* modal screen */
 .modal-screen {
   height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -153,8 +243,9 @@
   .sideBar {
     position: fixed;
     z-index: 100;
-    top: 70px;
+    top: 0px;
     left: -250px;
+
     transition-duration: 500ms;
     width: 10%;
     height: 100vh;
@@ -695,78 +786,70 @@
   }
 }
 /* -----------------------------------------Cart page------------------------------------------------ */
-.cart-container{
-display:flex;
-gap:30px;
-.cart-items{
-flex:2;
-background:white;
-padding:20px;
-border:1px solid #ddd;
-border-radius: 1rem;
-.cart-item{
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid #ddd;
-padding:15px 0;
-.product{
-display:flex;
-align-items:center;
-gap:15px;
-
-.image{
-    border-radius: 1rem;
-width:80px;
-height:80px;
-background:#ccc;
+.cart-container {
+  display: flex;
+  gap: 30px;
+  .cart-items {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+      .product {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .image {
+          border-radius: 1rem;
+          width: 80px;
+          height: 80px;
+          background: #ccc;
+        }
+        .details {
+          h3 {
+            margin: 0;
+          }
+          p {
+            margin: 5px 0;
+          }
+        }
+      }
+      .actions {
+        button {
+          margin: 5px;
+          padding: 5px 10px;
+          cursor: pointer;
+         
+        }
+        .remove {
+          background: #ff4d4d;
+          color: white;
+          border: none;
+           border-radius: 0.25rem;
+        }
+      }
+    }
+  }
 }
-.details{
-h3{
-margin:0;
-}
-p{
-margin:5px 0;
-}
-
-
-}
-}
-.actions{
-button{
-margin:5px;
-padding:5px 10px;
-cursor:pointer;
-
-}
-.remove{
-background:#ff4d4d;
-color:white;
-border:none;
-border-radius: 0.2rem;
-}
-}
-
-}
-}
-}
-
-.summary{
-flex:1;
-background:white;
-padding:20px;
-border:1px solid #ddd;
-height:fit-content;
-border-radius: 1rem;
-.checkout{
-width:100%;
-padding:10px;
-background:black;
-color:white;
-border:none;
-margin-top:15px;
-cursor:pointer;
-border-radius: 1rem;
-}
-
+.summary {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  height: fit-content;
+  .checkout {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+     border-radius: 1rem;
+  }
 }
