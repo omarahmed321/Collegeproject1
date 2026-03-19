@@ -238,8 +238,9 @@ body {
   transition: opacity 0.3s linear;
   pointer-events: none;
   top: 0;
- .sideBar {
-position: absolute;
+ 
+  .sideBar {
+    position: absolute;
     z-index: 100;
     top: 0px;
     left:-250px ;
@@ -252,21 +253,19 @@ position: absolute;
     box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15); 
 
     .menuButton {
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      z-index: 60;
-      align-items: center;
-      display: flex;
-      h2 {
-         padding: 15px 10px ;
-        color:#FFF8F0;
-        font-family: sans-serif,Arial, Helvetica, sans-serif;
-        margin-left: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 24px 20px 24px;
+    border-bottom: 1px solid rgba(255, 248, 240, 0.2); 
+    background-color: rgba(0, 0, 0, 0.08);
+    font-family: sans-serif,Arial, Helvetica;
+    h2{
+      color: #FFF8F0;
+    }
       }
       #exit_button {
         background-color: transparent; 
-      
         color: #FFF8F0; 
         font-size: 26px;
         position: absolute;
@@ -278,12 +277,11 @@ position: absolute;
         cursor: pointer;
         padding: 0;
         &:hover{ 
-        color: #000000; 
-        color: #333;
+        color: #222222;
       }
       }
     }
-
+    
     #Menu_elements button { 
       background-color: #FFF8F0;
       margin-top: 6rem;
@@ -297,14 +295,15 @@ position: absolute;
       border: none;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
       cursor: pointer;
-      &:hover{  
-        color: #000000; 
-        background-color: #f0f0f0;
-        box-shadow: rgba(0, 0, 0, 1);
+      transition: background-color 0.2s, box-shadow 0.2s, color 0.2s, transform 0.1s;
+      &:hover{
+      color: #000000;
+      background-color: #ffffff; 
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+      transform: translateY(-1px);
       }
     }
 
-  }
 }
 /* animations */
 @keyframes barFill {
