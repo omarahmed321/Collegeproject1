@@ -12,7 +12,10 @@
     sans-serif;
 }
 /* footer */
-
+.afterFooter {
+  height: 100px;
+  width: 100%;
+}
 #main_footer {
   position: fixed;
   bottom: 0;
@@ -128,102 +131,71 @@
     align-items: center;
     gap: 15px;
 
+    .cartBtn {
+      cursor: pointer;
+      position: relative;
+      border: none;
+      background: none;
 
+      transition-duration: 500ms;
+      a {
+        img {
+          width: 30px;
+        }
+      }
+    }
 
+    .cartBtn::after {
+      content: none;
+    }
 
+    .cartBtn:hover {
+      opacity: 0.5;
+      transition-duration: 500ms;
+    }
 
+    .cartBtn:focus {
+      opacity: 0.5;
+    }
+    button {
+      font-size: 17px;
+      color: white;
+      font-family: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      position: relative;
+      border: none;
+      background: none;
+      text-transform: uppercase;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: color;
+    }
 
+    button:focus,
+    button:hover {
+      color: #fff;
+    }
 
+    button:focus:after,
+    button:hover:after {
+      width: 100%;
+      left: 0%;
+    }
 
-.cartBtn {
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background: none;
-
-  transition-duration: 500ms;
-  a{
-   img{
-    width: 30px;
-  }
-  }
- 
-}
-
-
-.cartBtn::after {
-  content: none;
-}
-
-
-.cartBtn:hover {
-  opacity: 0.5;
-  transition-duration: 500ms;
-}
-
-
-.cartBtn:focus {
-  opacity: 0.5;
-}
-button {
-  
-  font-size: 17px;
-  color: white;
-  font-family: inherit;
-  font-weight: 800;
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background: none;
-  text-transform: uppercase;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-
-
-}
-
-button:focus,
-button:hover {
-  color: #fff;
-}
-
-button:focus:after,
-button:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-button:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+    button:after {
+      content: "";
+      pointer-events: none;
+      bottom: -2px;
+      left: 50%;
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: #fff;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: width, left;
+    }
   }
 }
 /* modal screen */
@@ -735,10 +707,15 @@ button:after {
     border-right: 1px solid #ddd;
     padding-right: 20px;
   }
-
   .top-reviews {
-    padding-left: 20px;
-
+    padding-left: 25px;
+    h2{
+      margin-bottom: 10px;
+    }
+    #Total_reviews{
+      overflow: auto;
+      height: 18vh;
+    }
     .review {
       border-bottom: 1px solid #eee;
       padding: 15px 0;
@@ -778,13 +755,25 @@ button:after {
   border-left: 1px solid #ddd;
   padding-left: 20px;
   padding-top: 30px;
-
+.products-list{
+        height: 72vh;
+  overflow: auto;
+    }
+      h2{
+    margin-bottom: 10px;
+  }
   #relate-products {
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+
+
+ 
   }
 }
+ 
 /* -----------------------------------------Cart page------------------------------------------------ */
 .cart-container {
   display: flex;
@@ -824,13 +813,12 @@ button:after {
           margin: 5px;
           padding: 5px 10px;
           cursor: pointer;
-         
         }
         .remove {
           background: #ff4d4d;
           color: white;
           border: none;
-           border-radius: 0.25rem;
+          border-radius: 0.25rem;
         }
       }
     }
@@ -850,6 +838,6 @@ button:after {
     border: none;
     margin-top: 15px;
     cursor: pointer;
-     border-radius: 1rem;
+    border-radius: 1rem;
   }
 }
