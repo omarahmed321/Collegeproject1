@@ -521,7 +521,7 @@ position: absolute;
   }
 }
 /* -----------------------------------------Seller page------------------------------------------------ */
-
+  
 .stars {
   display: flex;
   flex-direction: row;
@@ -531,7 +531,13 @@ position: absolute;
   display: flex;
   height: 100%;
   flex-direction: row;
+ .rating-stars {
+            font-size: 28px;
+          }
 
+          .rating-stars-filled {
+            color: gold;
+          }
   section {
     width: 33.33%;
     min-height: 100%;
@@ -551,7 +557,7 @@ position: absolute;
       }
 
       #seller-name {
-        font-size: 60px;
+        font-size: 43px;
         font-style: italic;
         margin: 0.83em 0; /* Added default Heading margin */
         
@@ -662,13 +668,7 @@ position: absolute;
             font-size: 22px;
           }
 
-          .rating-stars {
-            font-size: 28px;
-          }
-
-          .rating-stars-filled {
-            color: gold;
-          }
+       
 
           .stars {
             min-width: 23%;
