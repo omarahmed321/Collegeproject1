@@ -16,8 +16,9 @@ let disappear = () => {
   modalOverlay.style.opacity = "0";
   modalOverlay.style.pointerEvents = "none";
   document.body.style.overflow = "auto";
+
   setTimeout(() => {
-    modalOverlay.style.transform = "scale(0)";
+      modalOverlay.style.transform = "scale(0)";
   }, 500);
 };
 modalOverlay.addEventListener("click", (e) => {

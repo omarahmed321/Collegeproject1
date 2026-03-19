@@ -1,6 +1,5 @@
 /* Shared */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@
     Helvetica Neue,
     Arial,
     sans-serif;
-    
 }
 /* footer */
 .afterFooter {
@@ -72,10 +70,8 @@
     }
   }
 }
-body{
-  background-color:#FFF8F0 ;
-
-
+body {
+  background-color: #fff8f0;
 }
 /* nav bar */
 .beforeNav {
@@ -89,7 +85,7 @@ body{
   margin-top: 0;
   display: flex;
   align-items: center;
- 
+
   height: 70px;
   padding: 0 20px;
   background-color: #8c5a3c;
@@ -117,75 +113,41 @@ body{
       /*multiples of 4 rule.*/
       padding: 8px 16px;
       cursor: pointer;
-    
-    
     }
 
     .nav-img {
       height: 70px;
       width: auto;
-    
     }
   }
- 
- 
-.search-container {
 
-  width: 40rem;
+  .search-container {
+    width: 40rem;
 
-  margin-right: 13rem;
-  margin-left: 28rem;
-  .search-bar {
-  width: 100%;
-  padding: 14px 20px 14px 25px; 
-  border-radius: 30px; 
-  border: 1px solid transparent; 
-  background-color: #FFF8F0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  color: #333; 
-  outline: none; 
-  transition: all 0.3s ease-in-out;
+    margin-right: 13rem;
+    margin-left: 28rem;
+    .search-bar {
+      width: 100%;
+      padding: 14px 20px 14px 25px;
+      border-radius: 30px;
+      border: 1px solid transparent;
+      background-color: #fff8f0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      color: #333;
+      outline: none;
+      transition: all 0.3s ease-in-out;
 
-  &:placeholder {
-  color: #999; 
-}
+      &:placeholder {
+        color: #999;
+      }
 
-&:focus {
-  border: 1px solid #007bff;
-  box-shadow: 0 6px 12px rgba(42, 42, 42, 0.15); 
-}
-
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      &:focus {
+        border: 1px solid #007bff;
+        box-shadow: 0 6px 12px rgba(42, 42, 42, 0.15);
+      }
+    }
+  }
 
   .header-right {
     display: flex;
@@ -200,6 +162,7 @@ body{
       margin-right: 30px;
       transition-duration: 500ms;
       margin-right: 20px;
+      transition: opacity 0.5s ease;
       a {
         img {
           width: 30px;
@@ -292,7 +255,7 @@ body{
       display: flex;
       flex-direction: row;
       position: relative;
-    z-index: 60;
+      z-index: 60;
       h2 {
         padding: 1rem;
       }
@@ -301,9 +264,9 @@ body{
         margin-left: 3.5rem;
         width: 30px;
         height: 30px;
-           position: absolute;
-      z-index: 500;
-      right:15px;
+        position: absolute;
+        z-index: 500;
+        right: 15px;
       }
     }
 
@@ -326,7 +289,7 @@ body{
     width: var(--target, 30%);
   }
 }
- 
+
 /* toggle button */
 .toggle-switch {
   position: relative;
@@ -337,27 +300,26 @@ body{
   --link: rgb(27, 129, 112);
   --link-hover: rgb(24, 94, 82);
   .switch-label {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background-color: var(--dark);
-  border-radius: 25px;
-  cursor: pointer;
-  border: 3px solid var(--dark);
-  .checkbox {
-  position: absolute;
-  display: none;
-}
-.slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-}
-
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+    .checkbox {
+      position: absolute;
+      display: none;
+    }
+    .slider {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+  }
 }
 .checkbox:checked ~ .slider {
   background-color: var(--light);
@@ -390,8 +352,6 @@ body{
 /* -----------------------------------------Home page------------------------------------------------ */
 /* main hero section */
 .heroSection {
-  background-color: orange;
-  width: 80%;
   margin-right: auto;
   margin-left: auto;
   height: 200vh;
@@ -402,11 +362,9 @@ body{
 
   .banner {
     width: 100%;
-    background-color: green;
-    height: 45vh;
+    height: 60vh;
     position: relative;
     z-index: 1;
-
     overflow: hidden;
     .slider {
       display: flex;
@@ -421,52 +379,119 @@ body{
         position: relative;
         z-index: 1;
         overflow: hidden;
-        background: linear-gradient(to bottom, transparent, orange);
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
       }
     }
-    .arrow {
-      position: absolute;
-      z-index: 5;
-      width: 100px;
-      border: none;
-      padding: 10px 16px;
-      background-color: transparent;
-      font-size: 90px;
-      cursor: pointer;
-      height: 80%;
-    }
-    .right-arrow {
-      right: 0px;
-      top: 0;
-    }
-    .left-arrow {
-      left: 0px;
-    }
   }
-  .elements {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    right: 0;
-    left: 0;
-
-    margin-right: 15%;
-    margin-left: 15%;
-
+  .arrow {
     position: absolute;
-    z-index: 2;
+    z-index: 5;
+    width: 100px;
+    border: none;
+    padding: 10px 16px;
+    background-color: transparent;
+    font-size: 90px;
+    cursor: pointer;
+    height: 80%;
+  }
+  .right-arrow {
+    right: 0px;
+    top: 0;
+  }
+  .left-arrow {
+    left: 0px;
+  }
+}
+.elements {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  right: 0;
+  left: 0;
 
-    .element {
-      width: 300px;
-      height: 400px;
-      background-color: black;
+  margin-right: 5%;
+  margin-left: 5%;
+
+  position: absolute;
+  z-index: 2;
+
+  .element {
+    background-color: white;
+    border-radius: 1rem;
+    width: 700px;
+    height: 400px;
+    padding: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.5s ease;
+    .elementUpper {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      p {
+        font-weight: 600;
+        font-style: none;
+        font-size: 24px;
+        margin-bottom: 28px;
+      }
+      img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 8px;
+      }
+      .elementFooter {
+        margin-top: auto;
+        font-weight: 400;
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease;
+      box-shadow: 0 0 20px;
     }
   }
-  .el1 {
-    top: 37vh;
+}
+.el1 {
+  top: 47vh;
+}
+.el2 {
+  top: calc(47vh + 400px + 20px);
+}
+.carousell {
+  margin-right: 5%;
+  margin-left: 5%;
+  p {
+    font-weight: 600;
+    font-style: none;
+    font-size: 24px;
+    margin-bottom: 28px;
   }
-  .el2 {
-    top: calc(37vh + 400px + 20px);
+  position: relative;
+  top: calc(47vh + 400px + 20px + -2rem);
+  .items {
+    border-radius: 1rem;
+    padding: 12px;
+    border: 1px solid black;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .element {
+      padding: 12px;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      img {
+        max-height: 232px;
+      }
+    }
   }
 }
 /* -----------------------------------------Seller page------------------------------------------------ */
@@ -784,7 +809,7 @@ body{
 
         #product-description {
           margin-top: 0;
-        
+
           line-height: 1.6;
         }
       }
@@ -836,10 +861,10 @@ body{
   }
   .top-reviews {
     padding-left: 25px;
-    h2{
+    h2 {
       margin-bottom: 10px;
     }
-    #Total_reviews{
+    #Total_reviews {
       overflow: auto;
       height: 18vh;
     }
@@ -882,11 +907,11 @@ body{
   border-left: 1px solid #ddd;
   padding-left: 20px;
   padding-top: 30px;
-.products-list{
-        height: 72vh;
-  overflow: auto;
-    }
-      h2{
+  .products-list {
+    height: 72vh;
+    overflow: auto;
+  }
+  h2 {
     margin-bottom: 10px;
   }
   #relate-products {
@@ -895,19 +920,16 @@ body{
     border-bottom: 1px solid #ddd;
     display: flex;
     flex-direction: column;
-
-
- 
   }
 }
- 
+
 /* -----------------------------------------Cart page------------------------------------------------ */
 .cart-container {
   display: flex;
   gap: 30px;
   .cart-items {
     flex: 2;
-   
+
     padding: 20px;
     border: 1px solid #ddd;
     .cart-item {
@@ -924,7 +946,6 @@ body{
           border-radius: 1rem;
           width: 80px;
           height: 80px;
-         
         }
         .details {
           h3 {
@@ -943,7 +964,7 @@ body{
         }
         .remove {
           background: #ff4d4d;
-          
+
           border: none;
           border-radius: 0.25rem;
         }
