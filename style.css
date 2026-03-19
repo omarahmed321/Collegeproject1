@@ -238,46 +238,72 @@ body {
   transition: opacity 0.3s linear;
   pointer-events: none;
   top: 0;
-  .sideBar {
-    position: fixed;
+ .sideBar {
+position: absolute;
     z-index: 100;
     top: 0px;
-    left: -250px;
+    left:-250px ;
     transition-duration: 500ms;
-    width: 10%;
+    width: 17%;
     height: 100vh;
-    background-color: #fff;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.7);
+    background-color: #8C5A3C;
     display: flex;
     flex-direction: column;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15); 
+
     .menuButton {
-      align-items: center;
       display: flex;
       flex-direction: row;
       position: relative;
       z-index: 60;
+      align-items: center;
+      display: flex;
       h2 {
-        padding: 1rem;
+         padding: 15px 10px ;
+        color:#FFF8F0;
+        font-family: sans-serif,Arial, Helvetica, sans-serif;
+        margin-left: 12px;
       }
-      button {
-        margin-top: 4px;
-        margin-left: 3.5rem;
-        width: 30px;
-        height: 30px;
+      #exit_button {
+        background-color: transparent; 
+      
+        color: #FFF8F0; 
+        font-size: 26px;
         position: absolute;
         z-index: 500;
-        right: 15px;
+        right: 30px;
+        border: none; 
+        box-shadow: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 0;
+        &:hover{ 
+        color: #000000; 
+        color: #333;
+      }
       }
     }
 
-    button {
+    #Menu_elements button { 
+      background-color: #FFF8F0;
       margin-top: 6rem;
-      padding: 10px;
+      padding: 18px 30px; 
+      color: #333333; 
+      border-left: 4px solid transparent;
       width: 80%;
       margin-right: auto;
-      margin-left: auto;
+      margin-left: 24px;
       border-radius: 7px;
+      border: none;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      &:hover{  
+        color: #000000; 
+        background-color: #f0f0f0;
+        box-shadow: rgba(0, 0, 0, 1);
+      }
     }
+
   }
 }
 /* animations */
