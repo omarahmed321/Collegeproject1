@@ -569,7 +569,7 @@ body {
 
           .small-box-footer {
             margin: 1em 0; /* Added default Paragraph margin */
-            color: rgba(0, 0, 0, 0.5);
+            
             margin-bottom: -5px; /* Your override kept */
           }
         }
@@ -835,14 +835,41 @@ body {
         flex-direction: column;
         gap: 10px;
 
-        button {
-          width: 100%;
-          padding: 12px 18px;
+        #add-to-cart {
+          padding: 10px 20px;
+          border-radius: 6px;
           cursor: pointer;
-          font-family: inherit;
-          border-radius: 8px;
-          border: 1px solid black;
-          box-sizing: border-box;
+          transition: all 0.2s ease;
+          background-color: #696969;
+          color: #fff;
+          border: 1px solid #696969;
+        }
+
+        #add-to-cart:hover {
+          background-color: #696969;
+          color: #fff;
+          border-color: #696969;
+        }
+
+        #buy-now {
+          padding: 10px 20px;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          background-color: #3b3b3b;
+          color: #fff;
+          border: 1px solid #3b3b3b;
+        }
+
+        #buy-now:hover {
+          background-color: #3b3b3b;
+          color: #fff;
+          border-color: #3b3b3b;
+        }
+
+        #add-to-cart:active,
+        #buy-now:active {
+          transform: scale(0.95);
         }
       }
     }
@@ -957,14 +984,25 @@ body {
         }
       }
       .actions {
-        button {
-          margin: 5px;
-          padding: 5px 10px;
-          cursor: pointer;
+        .minus {
+          background-color:#ffbb00;
+          border-radius: 0.25rem;
+          width: 30px;
+          height: 30px;
+          border: 0px;
+        }
+        .plus {
+          border-radius: 0.25rem;
+          background-color: #44b800;
+          border: 0px;
+          width: 30px;
+          height: 30px;
         }
         .remove {
-          background: #ff4d4d;
+          background: #d10000;
 
+          height: 30px;
+          padding: 5px 10px;
           border: none;
           border-radius: 0.25rem;
         }

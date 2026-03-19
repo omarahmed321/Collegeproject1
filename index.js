@@ -41,10 +41,12 @@ let slide = (direction) => {
 // toggle button
 let input = document.querySelector('.checkbox');
 let body = document.body;
-let p =  document.querySelectorAll('p')
-let h1 = document.querySelectorAll('h1')
-let h2 = document.querySelectorAll('h2')
-let h3 = document.querySelectorAll('h3')
+
+let p = document.querySelectorAll('p');
+let h1 = document.querySelectorAll('h1');
+let h2 = document.querySelectorAll('h2');
+let h3 = document.querySelectorAll('h3');
+let button = document.querySelectorAll('button');
 
 let toggle = () => {
     let bg = getComputedStyle(body).backgroundColor;
@@ -52,14 +54,22 @@ let toggle = () => {
     if (bg === 'rgb(35, 35, 35)') {
         body.style.backgroundColor = '#FFF8F0';
         body.style.color = 'black';
-        p.style.color ='black';
-        h1.style.color='black';
-        h2.style.color='black';
-        h3.style.color='black';
-        
+
+      
+        h1.forEach(el => el.style.color = 'black');
+        h2.forEach(el => el.style.color = 'black');
+        h3.forEach(el => el.style.color = 'black');
+      
+
     } else {
         body.style.backgroundColor = '#232323';
         body.style.color = 'white';
+
+       
+        h1.forEach(el => el.style.color = 'white');
+        h2.forEach(el => el.style.color = 'white');
+        h3.forEach(el => el.style.color = 'white');
+       
     }
 };
 
