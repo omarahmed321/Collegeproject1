@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Shared/favicon.ico">
+</head>
+<body>
+        <!-- Nav -->
+     <div class="beforeNav"></div>
+       <header class="nav">
+      <div class="header-left">
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button><a href="index.html"><img class="nav-img" src="Shared/logo.png" /></a>
+
+        
+      </div>
+     
+    <div class="search-container">
+  <input type="text" class="search-bar" placeholder="Search products, brands and categories">
+</div>
+     
+      <div class="header-right">
+            <div class="toggle-switch" >
+  <label class="switch-label"  >
+    <input type="checkbox" class="checkbox" onclick="toggle()" >
+    <span class="slider" ></span>
+  </label>
+</div> 
+             <a href="signIn.html"><button class="general-btn">Sign In</button></a>
+        <a href="signUp.html"><button class="general-btn">Sign Up</button></a>
+        <a href="ordes.html"><button class="general-btn">Orders</button></a>
+        <button class="general-btn">Account</button>
+        <button class="cartBtn" ><a href="cart.html"><img src="Shared/shopping-cart.png" alt=""></a></button>
+      </div>
+    </header>
+    <!-- Modal  -->
+        <div class="modal-screen">
+      <div class="sideBar" id="sideBar">
+        <div class="menuButton">
+          <h2>Menu</h2>
+            <button id="exit_button" onclick="disappear()">✕</button>
+        </div>
+        <div id="Menu_elements">
+        <button>Best Sellers</button>
+        <button>Comparison</button>
+        <button>Orders</button>
+        <button>Categories</button>
+        </div>
+      </div>
+    </div>
+    <!-- main -->
+ <main id="contact-main-wrapper">
+      <div id="contact-header-top">
+        <h1 id="contact-main-title">Contact Us</h1>
+        <p id="contact-sub-paragraph">
+          We'd love to hear from you. Please fill out the form or use our
+          contact details below.
+        </p>
+      </div>
+      <div id="contact-split-container">
+        <section id="contact-left-form-section">
+          <form id="contactContain">
+            <div>
+              <i class="fa-solid fa-message"></i>
+              <span id="form-heading-text">Send Us A Message</span>
+            </div>
+
+            <div class="form-input-row">
+              <div class="field-group">
+                <label for="Name" class="input-label">Name:</label>
+                <input
+                  autofocus
+                  required
+                  id="Name"
+                  type="text"
+                  name="Name"
+                  class="text-field"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+              <div class="field-group">
+                <label for="Email" class="input-label">Email:</label>
+                <input
+                  required
+                  id="Email"
+                  type="email"
+                  name="Email"
+                  class="text-field"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+            </div>
+
+            <div class="form-input-row">
+              <label for="Phone" class="input-label">Phone:</label>
+              <select name="countryCode" class="dropdown-field" style="padding: 4px 2px; border-radius: 0.24rem; border: none; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                <option value="+20">+20 EG</option>
+                <option value="+966">+966 SA</option>
+                <option value="+971">+971 AE</option>
+                <option value="+1">+1 US</option>
+                <option value="+44">+44 GB</option>
+              </select>
+              <input
+                required
+                id="Phone"
+                type="tel"
+                name="Phone"
+                class="text-field phone-input"
+                placeholder="Enter Phone Number"
+              />
+            </div>
+
+            <div class="form-input-row">
+              <label for="issue" class="input-label">Issue Type:</label>
+              <select id="issue" name="issue" class="dropdown-field full-width" style="border: none; padding: 4px 3px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; margin-bottom: 12px;">
+                <option value="order">Order Issue</option>
+                <option value="payment">Payment Problem</option>
+                <option value="delivery">Delivery Problem</option>
+                <option value="return">Return / Refund</option>
+                <option value="account">Account Issue</option>
+                <option value="seller">Seller Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-input-row">
+              <label for="Message" class="input-label">Your Message</label>
+              
+              <input
+                required
+              
+                name="Message"
+          
+                id="Message"
+                class="textarea-field"
+                placeholder="Type Your Message"
+              ></input>
+            </div>
+
+            <div id="form-actions">
+              <input type="submit" value="Send" id="btn-submit" />
+              <input type="reset" value="Reset" id="btn-reset" />
+            </div>
+          </form>
+        </section>
+
+        <section id="contact-right-info-section">
+          <div class="info-box" id="phone">
+            <div class="icons-contact">
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <div class="content">
+              <strong class="title">Contact Information</strong>
+              <p class="data" id="contact-info">
+                You can also reach us through any of the following
+              </p>
+            </div>
+          </div>
+
+          <div class="info-box" id="phone-contact">
+            <div class="icons-contact"><i class="fa-solid fa-phone"></i></div>
+            <div class="content">
+              <strong class="title">Phone</strong>
+              
+              <p class="data">+20 123 456 7890</p>
+              <p class="footer">Sun * Thu, 9-00AM * 6:00PM</p>
+            </div>
+          </div>
+
+          <div class="info-box" id="email">
+            <div class="icons-contact">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="content">
+              <strong class="title">Email</strong>
+              <p class="data">support@yourstore.com</p>
+              <p class="footer">we typically reply with 24 hours</p>
+            </div>
+          </div>
+
+          <div class="info-box" id="location">
+            <div class="icons-contact">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="content">
+              <strong class="title">Address</strong>
+              <p class="data">123 SVM Street, Cairo,Egypt</p>
+              <p class="footer">11742</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <a href="facebook.com"
+              ><img
+                src="resources for contact us page/facebook.png"
+                width="50"
+                height="50"
+                alt="facebook"
+            /></a>
+
+            <a href="instgram.com"
+              ><img
+                src="resources for contact us page/instgram.png"
+                width="50"
+                height="50"
+                alt="instgram"
+            /></a>
+
+            <a href="twitter.com"
+              ><img
+                src="resources for contact us page/twitter.png"
+                width="50"
+                height="50"
+                alt="twitter"
+            /></a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+<!-- Footer -->
+     <div id="main_footer" style="height:  118px;">
+        <div class="footer_column">
+            <div class="foot_title">Get Help</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="support.com">Support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Know More About Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Join Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="Account.com">Your Account</a>
+                </li>
+                <li class="foot_link">
+                    <a href="ordes.html">Your Orders</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="afterFooter"></div>
+    
+</body>
+  <script src="index.js"></script>
+</html>
