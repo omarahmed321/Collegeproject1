@@ -1438,3 +1438,171 @@ body {
     }
   }
 }
+/* -----------------------------------------Account page------------------------------------------------ */
+.Account{
+  text-align: center;
+  color: #573B1E;
+  h1{
+    margin-top: 20px;
+margin-bottom: 20px;
+  }
+  main{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    height: 70vh;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    aside{
+   padding-top: 17px;
+      display: flex;
+      flex-direction: column;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+      justify-content: start;
+      background-color:#d9c9b8 ;
+      align-items: center;
+     
+width: 20%;
+gap:30px;
+
+img{
+border-radius: 50%;
+}
+button{
+width: 70%;
+border-radius: 0.5rem;
+border: 1px solid #825729;
+padding: 10px 15px;
+color: #573B1E;
+font-weight: 800;
+background-color: #ffecd794;
+
+}
+
+p{
+
+}
+    }
+
+
+
+
+    .rightSide{
+width: 80%;
+padding: 50px 40px;
+display: flex;
+flex-direction: column;
+.upper{
+  display: flex;
+  width: 100%;
+.innerLeftSide{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap:20px; border-right: 1px solid #573B1E;
+label{
+  input{
+    border:1px solid rgba(87, 59, 30,0.4);;
+    outline: none;
+    color: #573B1E;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+    font-weight: 500;
+  margin-top: 5px;
+  width: 95%;
+  height: 37px;
+ 
+  }
+}
+
+}
+.innerRightSide{
+  gap:20px; 
+  display: flex;
+  flex-direction: column;
+padding:12px 15px;
+width: 50%;
+p{
+  font-weight: bold; font-size: 20px;
+  margin-top:35px;
+}
+label{
+  input{
+    margin-top: 8px;
+        border:1px solid rgba(87, 59, 30,0.4);;
+    outline: none;
+    color: #573B1E;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+    font-weight: 500;
+  margin-top: 5px;
+  width: 95%;
+  height: 37px;
+  }
+ 
+}
+
+
+ button{
+    color: white;
+    width: 95%;
+    padding: 10px 15px;
+    background-color: rgb(182, 126, 94);
+    border-radius: 0.4rem;
+    border:none;
+  }
+
+
+
+
+
+
+}
+
+}
+.lower{
+  padding-top: 30px ;
+  padding-bottom: 30px ;
+  height: 40vh;
+  table{
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 100%;
+    border-radius: 0.3rem;
+   border-collapse: collapse;
+    border: none;
+    tr{
+      border-bottom: 1px solid #e9c8a6;
+th{
+padding: 13px 13px;
+}
+td{
+padding: 13px 13px;
+}
+
+
+
+
+
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+    }
+  }
+}
