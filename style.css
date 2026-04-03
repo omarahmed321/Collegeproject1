@@ -1240,3 +1240,87 @@ top: 30px;
    
   }
 }
+/* -----------------------------------------About page------------------------------------------------ */
+.about{
+
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    position:relative;
+  
+width: 65%;
+
+#rightSide{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+width: 20%;
+    display: flex;
+   flex-direction: column;
+   position: absolute;
+   right: 20px;
+   top:20px;
+   border-radius: 0.4rem;
+   
+   button{
+    width: 100%;
+    height: 70px;
+    border-radius: 0.25rem;
+    font-size: 15px;
+font-weight: bolder;
+    border:none;
+    color:#2c1807;
+    padding: 10px 30px;
+    text-align: center;
+    transition: 200ms;
+
+    &:active{
+      transform: scale(0.92);
+    }
+    &:hover{
+      background-color: #d89c65d5;
+
+    }
+  
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+aside{
+  background-color: #fff;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 30px;
+  width: 75%;
+  position: relative;
+    h1{
+        margin-bottom: auto;
+    }
+    p{
+      line-height: 30px;
+      font-size: 20px;
+    }
+    .images{
+    p{
+      font-weight: bold;
+    }
+      position: absolute;
+      right: 56px;
+      bottom: 20px;
+     
+      a{
+        img{
+
+        }
+      }
+    }
+}
+
+
+}
