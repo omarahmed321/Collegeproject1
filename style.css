@@ -124,7 +124,7 @@ body {
   .search-container {
     width: 40rem;
 
-
+margin-right: 5rem;
     margin-left: 28rem;
     .search-bar {
       width: 100%;
