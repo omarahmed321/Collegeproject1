@@ -1273,7 +1273,7 @@ body {
       transition: 200ms;
 
       &:active {
-        transform: scale(0.92);
+        transform: scale(0.97);
       }
       &:hover {
         background-color: #d89c65d5;
