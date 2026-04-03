@@ -26,7 +26,7 @@
   width: 100%;
   justify-content: space-around;
 
-  height: 100px;
+  height: 110px;
 
   a {
     margin-top: 20px;
@@ -1570,11 +1570,12 @@ label{
   padding-bottom: 30px ;
   height: 40vh;
   table{
-     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
     height: 100%;
     border-radius: 0.3rem;
    border-collapse: collapse;
     border: none;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     tr{
       border-bottom: 1px solid #e9c8a6;
 th{
