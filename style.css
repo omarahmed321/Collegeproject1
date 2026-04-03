@@ -124,7 +124,7 @@ body {
   .search-container {
     width: 40rem;
 
-    margin-right: 13rem;
+
     margin-left: 28rem;
     .search-bar {
       width: 100%;
@@ -238,72 +238,75 @@ body {
   transition: opacity 0.3s linear;
   pointer-events: none;
   top: 0;
- 
+
   .sideBar {
     position: absolute;
     z-index: 100;
     top: 0px;
-    left:-250px ;
+    left: -250px;
     transition-duration: 500ms;
     width: 17%;
     height: 100vh;
-    background-color: #8C5A3C;
+    background-color: #8c5a3c;
     display: flex;
     flex-direction: column;
-    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15); 
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
 
     .menuButton {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 24px 20px 24px;
-    border-bottom: 1px solid rgba(255, 248, 240, 0.2); 
-    background-color: rgba(0, 0, 0, 0.08);
-    font-family: sans-serif,Arial, Helvetica;
-    h2{
-      color: #FFF8F0;
-    }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 24px 20px 24px;
+      border-bottom: 1px solid rgba(255, 248, 240, 0.2);
+      background-color: rgba(0, 0, 0, 0.08);
+      font-family: sans-serif, Arial, Helvetica;
+      h2 {
+        color: #fff8f0;
       }
-      #exit_button {
-        background-color: transparent; 
-        color: #FFF8F0; 
-        font-size: 26px;
-        position: absolute;
-        z-index: 500;
-        right: 30px;
-        border: none; 
-        box-shadow: none;
-        border-radius: 5px;
-        cursor: pointer;
-        padding: 0;
-        &:hover{ 
+    }
+    #exit_button {
+      background-color: transparent;
+      color: #fff8f0;
+      font-size: 26px;
+      position: absolute;
+      z-index: 500;
+      right: 30px;
+      border: none;
+      box-shadow: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 0;
+      &:hover {
         color: #222222;
       }
-      }
     }
-    
-    #Menu_elements button { 
-      background-color: #FFF8F0;
-      margin-top: 6rem;
-      padding: 18px 30px; 
-      color: #333333; 
-      border-left: 4px solid transparent;
-      width: 80%;
-      margin-right: auto;
-      margin-left: 24px;
-      border-radius: 7px;
-      border: none;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
-      cursor: pointer;
-      transition: background-color 0.2s, box-shadow 0.2s, color 0.2s, transform 0.1s;
-      &:hover{
-      color: #000000;
-      background-color: #ffffff; 
-      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
-      transform: translateY(-1px);
-      }
-    }
+  }
 
+  #Menu_elements button {
+    background-color: #fff8f0;
+    margin-top: 6rem;
+    padding: 18px 30px;
+    color: #333333;
+    border-left: 4px solid transparent;
+    width: 80%;
+    margin-right: auto;
+    margin-left: 24px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition:
+      background-color 0.2s,
+      box-shadow 0.2s,
+      color 0.2s,
+      transform 0.1s;
+    &:hover {
+      color: #000000;
+      background-color: #ffffff;
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+      transform: translateY(-1px);
+    }
+  }
 }
 /* animations */
 @keyframes barFill {
@@ -520,7 +523,7 @@ body {
   }
 }
 /* -----------------------------------------Seller page------------------------------------------------ */
-  
+
 .stars {
   display: flex;
   flex-direction: row;
@@ -530,13 +533,13 @@ body {
   display: flex;
   height: 100%;
   flex-direction: row;
- .rating-stars {
-            font-size: 28px;
-          }
+  .rating-stars {
+    font-size: 28px;
+  }
 
-          .rating-stars-filled {
-            color: gold;
-          }
+  .rating-stars-filled {
+    color: gold;
+  }
   section {
     width: 33.33%;
     min-height: 100%;
@@ -559,7 +562,6 @@ body {
         font-size: 43px;
         font-style: italic;
         margin: 0.83em 0; /* Added default Heading margin */
-        
       }
     }
 
@@ -601,7 +603,7 @@ body {
 
           .small-box-footer {
             margin: 1em 0; /* Added default Paragraph margin */
-            
+
             margin-bottom: -5px; /* Your override kept */
           }
         }
@@ -666,8 +668,6 @@ body {
           .percentage {
             font-size: 22px;
           }
-
-       
 
           .stars {
             min-width: 23%;
@@ -824,19 +824,17 @@ body {
     .product-info {
       display: flex;
       gap: 40px;
-#seller-name {
+      #seller-name {
         margin-top: 20px;
         color: #606060;
         text-decoration: none;
         margin-right: auto;
         margin-left: auto;
-          &:hover {
-        color: #454545;
-        text-decoration: underline;
+        &:hover {
+          color: #454545;
+          text-decoration: underline;
+        }
       }
-      }
-
-  
 
       .product-text {
         flex: 2;
@@ -1024,7 +1022,7 @@ body {
       }
       .actions {
         .minus {
-          background-color:#ffbb00;
+          background-color: #ffbb00;
           border-radius: 0.25rem;
           width: 30px;
           height: 30px;
@@ -1066,3 +1064,82 @@ body {
     border-radius: 1rem;
   }
 }
+/* -----------------------------------------Sign Up page------------------------------------------------ */
+
+.signUp {
+  background-color: #f2e6d8;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 40%;
+  height: 78vh;
+  h1 {
+    font-size: 40px;
+  }
+  input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 0.5rem;
+    width: 80%;
+    border: 2px solid #b2b2b2;
+    outline: none;
+    font-size: 18px;
+  }
+  .terms {
+    display: flex;
+    flex-direction: rows;
+    input {
+      width: 10%;
+      height: 15px;
+    }
+  }
+  button {
+    border-radius: 3rem;
+    border: none;
+    font-size: 20px;
+  }
+   .returnHome{
+    position: relative; right :250px ;color: #472600; text-decoration: none; font-weight: 800; 
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+/* -----------------------------------------Sign In page------------------------------------------------ */
+.signIn {
+  background-color: #f2e6d8;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 30%;
+  height: 60vh;
+
+  input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 0.5rem;
+    width: 80%;
+    border: 2px solid #b2b2b2;
+    outline: none;
+    font-size: 18px;
+  }
+  .returnHome{
+    position: relative; right :180px ;color: #472600; text-decoration: none; font-weight: 800; 
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+/* -----------------------------------------Orders page------------------------------------------------ */
