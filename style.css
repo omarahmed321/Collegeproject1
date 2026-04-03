@@ -87,7 +87,7 @@ body {
   align-items: center;
 
   height: 70px;
-  padding: 0 20px;
+  padding-left: 20px;
   background-color: #8c5a3c;
   border-bottom: 1px solid #ddd;
   position: fixed;
@@ -124,8 +124,8 @@ body {
   .search-container {
     width: 40rem;
 
-margin-right: 5rem;
-    margin-left: 28rem;
+margin-right: 1rem;
+    margin-left: 22rem;
     .search-bar {
       width: 100%;
       padding: 14px 20px 14px 25px;
@@ -153,6 +153,7 @@ margin-right: 5rem;
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-left: auto;
 
     .cartBtn {
       cursor: pointer;
@@ -1143,3 +1144,99 @@ margin-right: 5rem;
   }
 }
 /* -----------------------------------------Orders page------------------------------------------------ */
+#urOrders{
+  margin-top: 20px ;
+  margin-left: 15px;
+  font-size: 40px;
+ padding-bottom: 20px;
+}
+.orders{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 85vh;
+ justify-content: space-evenly;
+ align-items: center;
+gap:20px;
+  .order{
+    width: 95%;
+    height: 200px;
+
+   margin-bottom: 20px;
+   border-radius: 1rem;
+   border:1px solid #d0d0d0;
+   .upper{
+    display: flex;
+    flex-direction: row;
+height: 40%;
+width: 100%;
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+background-color:#d0d0d0c4;
+padding: 13px 5rem;
+.orderDate{
+  margin-right: 79px;
+p{
+  margin-bottom: 6px;
+  font-size: 20px;
+color: #474747b5;
+
+}
+}
+.orderTotal{
+    margin-right: 79px;
+p{
+  margin-bottom: 6px;
+  font-size: 20px;
+color: #474747b5;
+
+}
+}
+.shippedTo{
+      margin-right: 79px;
+p{
+  margin-bottom: 6px;
+  font-size: 20px;
+  color: #474747b5;
+
+}
+}
+
+   }
+   .lower{
+height: 70%;
+width: 100%;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+display: flex;
+flex-direction: row;
+position: relative;
+align-items: center ;
+
+img{
+width: 130px;
+margin-bottom: 15px ;
+margin-right: 15px;
+}
+p{
+
+ margin-bottom: 6px;
+  font-size: 20px;
+}
+button{
+width: 15%;
+height: 40%;
+border-radius: 1rem;
+position:absolute;
+right: 20px;
+border:none;
+background-color: black;
+color: white;
+font-size: 15px;
+top: 30px;
+}
+
+   }
+   
+  }
+}
