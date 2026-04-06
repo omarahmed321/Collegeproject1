@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery Information</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Shared/favicon.ico" />
+  </head>
+
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    "
+  >
+    <!-- this is the nav bar -->
+    <div class="beforeNav"></div>
+    <header class="nav">
+      <div class="header-left">
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button>
+        <a href="index.html"> <img class="nav-img" src="Shared/logo.png" /></a>
+      </div>
+
+      <div class="search-container" style="margin-right: 11rem">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search products, brands and categories"
+        />
+      </div>
+
+      <div class="header-right">
+        <a href="signIn.html"><button class="general-btn">Sign In</button></a>
+        <a href="signUp.html"><button class="general-btn">Sign Up</button></a>
+        <a href="ordes.html"><button class="general-btn">Orders</button></a>
+        <a href="Acccount.html"><button class="general-btn">Account</button></a>
+        <button class="cartBtn">
+          <a href="cart.html"><img src="Shared/shopping-cart.png" alt="" /></a>
+        </button>
+      </div>
+    </header>
+    <!-- ----------------------------------------------------- -->
+    <!-- this is the modal  -->
+    <div class="modal-screen">
+      <div class="sideBar" id="sideBar">
+        <div class="menuButton">
+          <h2>Menu</h2>
+          <button id="exit_button" onclick="disappear()">✕</button>
+        </div>
+        <div id="Menu_elements">
+          <button>Best Sellers</button>
+          <button>Comparison</button>
+          <a href="ordes.html"><button>Orders</button></a>
+          <button>Categories</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- main -->
+
+    <h1 style="margin-bottom: 20px">Delivery Info</h1>
+
+    <main>
+      <div class="upper">
+        <aside>
+          <div class="innerUpper">
+            <img src="" alt="" />
+
+            <div class="innerRight">
+              <h2>Order #1541</h2>
+
+              <div class="fullLine">
+                <div class="line"></div>
+                <div style="left: 0rem">
+                  <img
+                    style=" position: absolute; width: 220px; top:-22px ; left: -97px;"
+                    src="resources for DeliveryInfo/checkmark.png"
+                    alt=""
+                  />
+                  <p>Order Placed</p>
+                </div>
+                <div style="left: 15rem">
+                  <p>Processing</p>
+                       <img
+                    style=" position: absolute; width: 220px; top:-22px ; left: -87px;"
+                    src="resources for DeliveryInfo/checkmark.png"
+                    alt=""
+                  />
+                </div>
+                <div style="left: 30rem">
+                       <img
+                    style=" position: absolute; width: 220px; top:-22px ; left: -85px;"
+                    src="resources for DeliveryInfo/checkmark.png"
+                    alt=""
+                  />
+                  <p>Shipped</p>
+                </div>
+                <div style="right: -40px ;  width: 200px ;height: 70px; background:#C77844; border-radius: 2rem; top: -15px;">
+               
+                                <img
+                    style=" position: absolute; width: 180px; top:-15px ; right: 70px;  "
+                    src="resources for DeliveryInfo/outForDeleivery.png"
+                    alt=""
+                  />
+                  <p style="top:28px ; right:15px ;  font-weight: bolder; ">Out For Delivery</p>
+               
+            
+
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="innerLower">
+            <img src="" alt="" />
+            <p>
+              Estimated Delivery:
+              <span style="font-weight: bolder; font-size: 18px"
+                >Arp 20, 2024</span
+              >
+            </p>
+          </div>
+        </aside>
+        <div class="rightSide">
+          
+          <h2 >Expected Delivery Time</h2>
+          <div class="time" style="position: relative;">
+            <img src="resources for DeliveryInfo/clock.png" alt="" width="150px" style="position: absolute; top:-20px; left:-90px ">
+            <p>9:00 AM – 11:00 AM</p>
+          
+             <img src="resources for DeliveryInfo/clock.png" alt="" width="150px" style="position: absolute; top:0px; left:-90px ">
+            <p>12:00 PM – 2:00 PM</p>
+        
+             <img src="resources for DeliveryInfo/clock.png" alt="" width="150px" style="position: absolute; top:22px; left:-90px ">
+            <p>3:00 PM – 5:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lower">
+   <div class="rightSide">
+          <img src="" alt="" />
+          <h2 style="margin-bottom: 20px">Order Summary</h2>
+          <div class="time" style="position: relative;">
+            <img src="resources for DeliveryInfo/clock.png" alt="" width="150px" style="position: absolute; top:-20px; left:-90px ">
+            <p >9:00 AM – 11:00 AM</p>
+            <br />
+             <img src="resources for DeliveryInfo/clock.png" alt="" width="150px" style="position: absolute; top:0px; left:-90px ">
+            <p>12:00 PM – 2:00 PM</p>
+            <br />
+             <img src="resources for DeliveryInfo/clock.png" alt="" width="150px" style="position: absolute; top:22px; left:-90px ">
+            <p>3:00 PM – 5:00 PM</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </main>
+
+    <!-- footer -->
+
+    <div id="main_footer" style="height: 118px">
+      <div class="footer_column">
+        <div class="foot_title">Get Help</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="Contact.html">Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <div class="foot_title">Know More About Us</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+        <a href="" target="_blank"
+          ><img src="resources for about page/face.png" alt="" width="32px"
+        /></a>
+        <a href="https://www.linkedin.com/in/symo-web-3a6693400" target="_blank"
+          ><img
+            src="resources for about page/linkedin.png"
+            style="margin-top: 2px"
+            alt=""
+            width="32px"
+        /></a>
+
+        <a href="https://x.com/SYMO_Web/" target="_blank"
+          ><img
+            src="resources for about page/x.png"
+            style="margin-top: 3px"
+            alt=""
+            width="32px"
+        /></a>
+      </div>
+      <div class="footer_column">
+        <div class="foot_title">Join Us</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="Acccount.html">Your Account</a>
+          </li>
+          <li class="foot_link">
+            <a href="ordes.html">Your Orders</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="afterFooter"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
