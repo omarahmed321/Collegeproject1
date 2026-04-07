@@ -71,6 +71,9 @@ function initCart() {
 
   });
 }
+function checkout(){
+  window.open("payment.html","_self");
+}
 
 initCart();
 updateTotals();

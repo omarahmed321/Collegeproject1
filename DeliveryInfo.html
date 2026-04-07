@@ -52,8 +52,8 @@
           <button id="exit_button" onclick="disappear()">✕</button>
         </div>
         <div id="Menu_elements">
-          <button>Best Sellers</button>
-          <button>Comparison</button>
+        <a href="BestSeller.html"><button>Best Sellers</button></a>
+            <a href="Comparison.html"> <button>Comparison</button></a> 
           <a href="ordes.html"><button>Orders</button></a>
           <button>Categories</button>
         </div>
@@ -66,7 +66,7 @@
 
     <main>
       <div class="upper">
-        <aside>
+        <div class="left">
           <div class="innerUpper">
             <img src="" alt="" />
 
@@ -125,7 +125,7 @@
               >
             </p>
           </div>
-        </aside>
+        </div>
         <div class="rightSide">
           
           <h2 >Expected Delivery Time</h2>
@@ -142,20 +142,82 @@
         </div>
       </div>
 
-      <div class="lower">
-   <div class="rightSide">
-          <img src="" alt="" />
-          <h2 style="margin-bottom: 20px">Order Summary</h2>
-          <div class="time" style="position: relative;">
+   <div id="lower-row">
+            <!-- LEFT COLUMN -->
+            <div id="lower-left">
+                <!-- Upper part: Delivery address -->
+                <div id="delivery-address-card">
+                    <div id="address-header" style="position: relative;">
+                        <img class="delivery-icon" src="resources for DeliveryInfo/location.png" alt="delivery-icon" width="200px" style="position: absolute; left:-100px ; top:-30px;"  >
+                        <h3 id="address-title">Delivery Address</h3>
+                    </div>
+                    <address id="address-body">
+                        <span id="address-name">Ahmed Mohamed,</span>
+                        <span id="address-street">123 ABC Street,</span>
+                        <span id="address-city">Cairo, Egypt</span>
+                    </address>
+                </div>
+                <!-- /delivery-address-card -->
+                <!-- Lower part: Order summary (items) -->
+                <div id="order-summary-card">
+                    <h3 id="order-summary-title">Order Summary</h3>
+                    <div id="order-items-list">
+                        <!-- Item 1 -->
+                        <div class="order-item" id="item-earbuds">
+                            <div class="item-image-wrap">
+                                <img class="item-image" src="resources for DeliveryInfo/wireless_mouse-removebg-preview.png" width="80px" height="80px" alt="Wireless Earbuds">
+                            </div>
+                            <div class="item-details">
+                                <span class="item-name">Wireless Earbuds</span>
+                                <span class="item-qty">Qty: 1</span>
+                            </div>
+                            <div class="item-meta">
+                                <span class="item-qty-right">Qty: 1</span>
+                                <span class="item-price">350$</span>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="order-item" id="item-mouse">
+                            <div class="item-image-wrap">
+                                <img class="item-image" src="resources for DeliveryInfo/earbuds-removebg-preview.png" width="80px" height="80px" alt="Wireless Gaming Mouse">
+                            </div>
+                            <div class="item-details">
+                                <span class="item-name">Wireless Gaming Mouse</span>
+                                <span class="item-qty">Qty: 1</span>
+                            </div>
+                            <div class="item-meta">
+                                <span class="item-qty-right">Qty: 1</span>
+                                <span class="item-price">50$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /order-items-list -->
+                    <div id="order-total-row">
+                        <span id="total-label">Total:</span>
+                        <span id="total-amount">400$</span>
+                    </div>
+                </div>
+                <!-- /order-summary-card -->
+            </div>
+     
+          
+            <div id="lower-right" style="height: 200px; flex-direction: column; display: flex;   align-items: center;">
+
+                  <h2 style="margin-bottom: 20px; margin-right: 10rem;">Order Summary</h2>
+          <div class="time" style="position: relative; display: flex; flex-direction: column; gap:3px ; font-size: 17px;">
             <img src="resources for DeliveryInfo/clock.png" alt="" width="150px" style="position: absolute; top:-20px; left:-90px ">
-            <p >9:00 AM – 11:00 AM</p>
-            <br />
+            <p>9:00 AM – 11:00 AM</p>
+          
              <img src="resources for DeliveryInfo/clock.png" alt="" width="150px" style="position: absolute; top:0px; left:-90px ">
             <p>12:00 PM – 2:00 PM</p>
-            <br />
+        
              <img src="resources for DeliveryInfo/clock.png" alt="" width="150px" style="position: absolute; top:22px; left:-90px ">
             <p>3:00 PM – 5:00 PM</p>
           </div>
+
+            </div>
+            <!-- /lower-right -->
+
         </div>
 
 
@@ -171,7 +233,7 @@
 
     <!-- footer -->
 
-    <div id="main_footer" style="height: 118px">
+    <div id="main_footer" style="height: 118px ;position:static;">
       <div class="footer_column">
         <div class="foot_title">Get Help</div>
         <ul class="foot_li">
@@ -218,7 +280,7 @@
         </ul>
       </div>
     </div>
-    <div class="afterFooter"></div>
+    
   </body>
   <script src="index.js"></script>
 </html>

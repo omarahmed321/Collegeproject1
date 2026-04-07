@@ -1,230 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account</title>
-      <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="Shared/favicon.ico">
-</head>
-<body >
-        <!-- this is the nav bar -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Shared/favicon.ico" />
+  </head>
+  <body>
+    <!-- this is the nav bar -->
     <div class="beforeNav"></div>
-       <header class="nav">
+    <header class="nav">
       <div class="header-left">
-        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button><a href="index.html"><img class="nav-img" src="Shared/logo.png" /></a>
-
-        
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button
+        ><a href="index.html"><img class="nav-img" src="Shared/logo.png" /></a>
       </div>
-     
-    <div class="search-container">
-  <input type="text" class="search-bar" placeholder="Search products, brands and categories">
-</div>
-     
-      <div class="header-right">
 
-             <a href="signIn.html"><button class="general-btn">Sign In</button></a>
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search products, brands and categories"
+        />
+      </div>
+
+      <div class="header-right">
+        <a href="signIn.html"><button class="general-btn">Sign In</button></a>
         <a href="signUp.html"><button class="general-btn">Sign Up</button></a>
         <a href="ordes.html"><button class="general-btn">Orders</button></a>
-      <a href="Acccount.html"><button class="general-btn">Account</button></a>  
-        <button class="cartBtn" ><a href="cart.html"><img src="Shared/shopping-cart.png" alt=""></a></button>
+        <a href="Acccount.html"><button class="general-btn">Account</button></a>
+        <button class="cartBtn">
+          <a href="cart.html"><img src="Shared/shopping-cart.png" alt="" /></a>
+        </button>
       </div>
     </header>
     <!-- ----------------------------------------------------- -->
     <!-- this is the modal  -->
-  <div class="modal-screen">
+    <div class="modal-screen">
       <div class="sideBar" id="sideBar">
         <div class="menuButton">
           <h2>Menu</h2>
-            <button id="exit_button" onclick="disappear()">✕</button>
+          <button id="exit_button" onclick="disappear()">✕</button>
         </div>
         <div id="Menu_elements">
-        <button>Best Sellers</button>
-        <button>Comparison</button>
-       <a href="ordes.html"><button>Orders</button></a> 
-        <button>Categories</button>
+          <a href="BestSeller.html"><button>Best Sellers</button></a>
+          <a href="Comparison.html">
+            <a href="Comparison.html"> <button>Comparison</button></a>
+          </a>
+          <a href="ordes.html"><button>Orders</button></a>
+          <button>Categories</button>
         </div>
       </div>
     </div>
     <!-- main -->
-     <div class="Account">
-<h1>
-My Account
-</h1>
-
-
-<main>
-<aside>
-<img src="resources for account page/person.png" alt="" width="200px">
-<button >Change</button>
-<p style="font-size: 25px; font-weight: bolder;">Account Details</p>
-<p>Name: Omar Ahmed</p>
-<p>Address: Cairo</p>
-<p>Email: omarahmed@gmail.com</p>
-</aside>
-
-<div class="rightSide ">
-  <div class="upper">
-    <div class="innerLeftSide">
-  <p style="font-size: 23px;">Welcome , <span style="font-weight: bolder;">Ahmed Mohammed</span></p>
-<p style="font-weight: bold; font-size: 20px;">Account Details</p>
-
-<label for="fullName">FullName:<br>
-
-  <input type="text" id="fullName" placeholder="Omar Ahmed" >
-  
-</label>
-<label for="Address">Address:
-  <br>
-  <input type="text" id="Address"  placeholder="Cairo">
-
-</label>
-<label for="Email">Email:
-  <br>
-  <input type="text" id="Email" placeholder="omarahmed@gmail.com">
-
-</label>
-</div>
-<div class="innerRightSide">
-<p>Change Password</p>
-<label for="currentPass">Current Password <br>
-  <input type="text" id="currentPass" placeholder="Enter Current Password">
-</label>
-<label for="newPass">New Password <br>
-  <input type="text" id="newPass" placeholder="Enter New Password">
-</label>
-<button>Save Changes</button>
-
-</div>
-  </div>
-  <div class="lower">
-    <p style="margin-bottom: 12px; font-size: 22px;font-weight: bolder;">Recent Orders</p>
-<table  width="100%">
-<tr style="background-color: #ffecd794;">
-  <th>Order</th>
-  <th>Date</th>
-  <th>Status</th>
- 
-</tr>
-<tr>
-  <td>Order #1541</td>
- <td>April 20,2024</td>
-  <td>Delivered</td>
-
-</tr>
-<tr>
-  <td>Order #1536</td>
-  <td>April 15,2024</td>
-  <td>Pending</td>
-
-</tr>
-<tr>
- <td>Order #1524</td>
-  <td>April 8,2024</td>
-  <td>Cancelled</td>
- 
-</tr>
-
-
-
-
-
-
-
-
-
-</table>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-</main>
-
-
-
-
-
-
-
-     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!-- footer -->
-      <div id="main_footer" style="height:  118px;">
-        <div class="footer_column">
-            <div class="foot_title">Get Help</div>
-            <ul class="foot_li">
-                <li class="foot_link">
-                    <a href="Contact.html">Support</a>
-                </li>
-            </ul>
+    <div class="Account">
+      <h1>My Account</h1>
+
+      <div class="innerAcc">
+        <aside>
+          <img
+            src="resources for account page/person.png"
+            alt=""
+            width="200px"
+          />
+          <button>Change</button>
+          <p style="font-size: 25px; font-weight: bolder">Account Details</p>
+          <p>Name: Omar Ahmed</p>
+          <p>Address: Cairo</p>
+          <p>Email: omarahmed@gmail.com</p>
+        </aside>
+
+        <div class="rightSide">
+          <div class="upper">
+            <div class="innerLeftSide">
+              <p style="font-size: 23px">
+                Welcome ,
+                <span style="font-weight: bolder">Ahmed Mohammed</span>
+              </p>
+              <p style="font-weight: bold; font-size: 20px">Account Details</p>
+
+              <label for="fullName"
+                >FullName:<br />
+
+                <input type="text" id="fullName" placeholder="Omar Ahmed" />
+              </label>
+              <label for="Address"
+                >Address:
+                <br />
+                <input type="text" id="Address" placeholder="Cairo" />
+              </label>
+              <label for="Email"
+                >Email:
+                <br />
+                <input
+                  type="text"
+                  id="Email"
+                  placeholder="omarahmed@gmail.com"
+                />
+              </label>
+            </div>
+            <div class="innerRightSide">
+              <p>Change Password</p>
+              <label for="currentPass"
+                >Current Password <br />
+                <input
+                  type="text"
+                  id="currentPass"
+                  placeholder="Enter Current Password"
+                />
+              </label>
+              <label for="newPass"
+                >New Password <br />
+                <input
+                  type="text"
+                  id="newPass"
+                  placeholder="Enter New Password"
+                />
+              </label>
+              <button>Save Changes</button>
+            </div>
+          </div>
+          <div class="lower">
+            <p
+              style="margin-bottom: 12px; font-size: 22px; font-weight: bolder"
+            >
+              Recent Orders
+            </p>
+            <table width="100%">
+              <tr style="background-color: #ffecd794">
+                <th>Order</th>
+                <th>Date</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>Order #1541</td>
+                <td>April 20,2024</td>
+                <td>Delivered</td>
+              </tr>
+              <tr>
+                <td>Order #1536</td>
+                <td>April 15,2024</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>Order #1524</td>
+                <td>April 8,2024</td>
+                <td>Cancelled</td>
+              </tr>
+            </table>
+          </div>
         </div>
-        <div class="footer_column">
-            <div class="foot_title">Know More About Us</div>
-            <ul class="foot_li">
-                <li class="foot_link">
-                    <a href="about.html">About Us</a>
-                </li>
-            </ul>
-              <a href="" target="_blank"><img src="resources for about page/face.png" alt="" width="32px"></a>
-<a href="https://www.linkedin.com/in/symo-web-3a6693400" target="_blank"><img src="resources for about page/linkedin.png" style="margin-top: 2px;" alt="" width="32px"></a>
+      </div>
+    </div>
 
-<a href="https://x.com/SYMO_Web/" target="_blank"><img src="resources for about page/x.png" style="margin-top: 3px;" alt="" width="32px"></a>
-        </div>
-        <div class="footer_column">
-            <div class="foot_title">Join Us</div>
-            <ul class="foot_li">
-                <li class="foot_link">
-                    <a href="Acccount.html">Your Account</a>
-                </li>
-                <li class="foot_link">
-                    <a href="ordes.html">Your Orders</a>
-                </li>
-            </ul>
-        </div>
+    <!-- footer -->
+    <div id="main_footer" style="height: 118px">
+      <div class="footer_column">
+        <div class="foot_title">Get Help</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="Contact.html">Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <div class="foot_title">Know More About Us</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+        <a href="" target="_blank"
+          ><img src="resources for about page/face.png" alt="" width="32px"
+        /></a>
+        <a href="https://www.linkedin.com/in/symo-web-3a6693400" target="_blank"
+          ><img
+            src="resources for about page/linkedin.png"
+            style="margin-top: 2px"
+            alt=""
+            width="32px"
+        /></a>
+
+        <a href="https://x.com/SYMO_Web/" target="_blank"
+          ><img
+            src="resources for about page/x.png"
+            style="margin-top: 3px"
+            alt=""
+            width="32px"
+        /></a>
+      </div>
+      <div class="footer_column">
+        <div class="foot_title">Join Us</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="Acccount.html">Your Account</a>
+          </li>
+          <li class="foot_link">
+            <a href="ordes.html">Your Orders</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="afterFooter"></div>
-   
-
-
-</body>
-<script src="index.js"></script>
-
+  </body>
+  <script src="index.js"></script>
 </html>

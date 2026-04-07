@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Sellers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="beforeNav"></div>
+
+    <header class="nav">
+        <div class="header-left">
+            <button id="hamburger" class="noback-btn" onclick="appear()">≡</button><a href="index.html"><img
+                    class="nav-img" src="Shared/logo.png" /></a>
+
+        </div>
+
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search products, brands and categories">
+        </div>
+
+        <div class="header-right">
+            <div class="toggle-switch">
+                <label class="switch-label">
+                    <input type="checkbox" class="checkbox" onclick="toggle()">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <a href="signIn.html"><button class="general-btn">Sign In</button></a>
+            <a href="signUp.html"><button class="general-btn">Sign Up</button></a>
+            <a href="ordes.html"><button class="general-btn">Orders</button></a>
+            <a href="Acccount.html"><button class="general-btn">Account</button></a>
+            <button class="cartBtn"><a href="cart.html"><img src="Shared/shopping-cart.png" alt=""></a></button>
+        </div>
+    </header>
+    <!-- modal  -->
+    <div class="modal-screen">
+        <div class="sideBar" id="sideBar">
+            <div class="menuButton">
+                <h2>Menu</h2>
+                <button id="exit_button" onclick="disappear()">✕</button>
+            </div>
+            <div id="Menu_elements">
+              <a href="BestSeller.html"><button>Best Sellers</button></a>
+                  <a href="Comparison.html"> <button>Comparison</button></a> 
+                <a href="ordes.html"><button>Orders</button></a>
+                <button>Categories</button>
+            </div>
+        </div>
+    </div>
+    <!-------Best Seller page------->
+    <div id="BS_background_box">
+        <h1>Best Sellers</h1>
+        <div class="category_box">
+            <div class="category_title">
+                <p>Top sellers in phones</p>
+            </div>
+            <div class="category_scroll">
+                <div class="category_card">
+                    <img src="resources for BestSeller page/iphone 17 pro max.png" class="card_img">
+                    <div class="info">
+                        <p>
+                            IPhone 17 pro max
+                        </p>
+                    </div>
+                    <button class="add">
+                        Add To Cart
+                    </button>
+                </div>
+                <div class="category_card">
+                    <img src="resources for BestSeller page/S25ultra.png" class="card_img">
+                    <p class="info">
+                        Samsung Galaxy S25
+                    </p>
+                    <button class="add">
+                        Add To Cart
+                    </button>
+                </div>
+                <div class="category_card">
+                    <img src="resources for BestSeller page/nokia .png" class="card_img">
+
+                    <p class="info">
+                        Nokia 105
+                    </p>
+
+                    <button class="add">
+                        Add To Cart
+                    </button>
+                </div>
+                <div class="category_card">
+                    <img src="resources for BestSeller page/redmi 15.png" class="card_img">
+
+                    <p class="info">
+                        Redmi 15
+                    </p>
+
+                    <button class="add">
+                        Add To Cart
+                    </button>
+                </div>
+                <div class="category_card">
+                    <img src="resources for BestSeller page/iphone air.png" class="card_img">
+
+                    <p class="info">
+                        Apple iPhone Air
+                    </p>
+
+                    <button class="add">
+                        Add To Cart
+                    </button>
+                </div>
+                <div class="category_card">
+                    <img src="resources for BestSeller page/redmagic 11.png" class="card_img">
+                    <p class="info">
+                        REDMAGIC 11 Pro
+                    </p>
+                    <button class="add">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="category_box">
+    <div class="category_title">
+        <p>Top sellers in laptops</p>
+    </div>
+    <div class="category_scroll">
+        <div class="category_card">
+            <img src="resources for BestSeller page/Laptops/Macbook pro.png" class="card_img">
+            <div class="info">
+                <p>MacBook Pro M3</p>
+            </div>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Laptops/Dell Xps 15.png" class="card_img">
+            <p class="info">Dell XPS 15</p>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Laptops/HP spectre x360.png" class="card_img">
+            <p class="info">HP Spectre x360</p>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Laptops/Lenovo legion 7.png" class="card_img">
+            <p class="info">Lenovo Legion 7</p>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Laptops/asus rog zephyrus.png" class="card_img">
+            <p class="info">Asus ROG Zephyrus</p>
+            <button class="add">Add To Cart</button>
+        </div>
+        <div class="category_card">
+            <img src="resources for BestSeller page/Laptops/Alienware Aurora.png" class="card_img">
+            <p class="info">Alienware Aurora </p>
+            <button class="add">Add To Cart</button>
+        </div>
+    </div>
+</div>
+<div class="category_box">
+    <div class="category_title">
+        <p>Top sellers in headphones</p>
+    </div>
+    <div class="category_scroll">
+        <div class="category_card">
+            <img src="resources for BestSeller page/Headphones/Sony WH-1000XM5.png" class="card_img">
+            <div class="info">
+                <p>Sony WH-1000XM5</p>
+            </div>
+            <button class="add">Add To Cart</button>
+        </div>
+  <div class="category_card">
+            <img src="resources for BestSeller page/Headphones/Sony WH-CH520.png" class="card_img">
+            <div class="info">
+                <p>Sony WH-CH520</p>
+            </div>
+            <button class="add">Add To Cart</button>
+        </div>
+        <div class="category_card">
+            <img src="resources for BestSeller page/Headphones/AirPods Pro 2.png" class="card_img">
+            <p class="info">AirPods Pro 2</p>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Headphones/JBL Tune 760NC.png" class="card_img">
+            <p class="info">JBL Tune 760NC</p>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Headphones/Beats Studio 3.png" class="card_img">
+            <p class="info">Beats Studio 3</p>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Headphones/Anker Soundcore Q45.png" class="card_img">
+            <p class="info">Anker Soundcore Q45</p>
+            <button class="add">Add To Cart</button>
+        </div>
+    </div>
+</div>
+<div class="category_box">
+    <div class="category_title" id="test">
+        <p>Top sellers in smart watches</p>
+    </div>
+    <div class="category_scroll">
+        <div class="category_card">
+            <img src="resources for BestSeller page/Smart watches/apple-watch-series-9.png" class="card_img">
+            <div class="info">
+                <p>Apple Watch Series 9</p>
+            </div>
+            <button class="add">Add To Cart</button>
+        </div>
+        <div class="category_card">
+            <img src="resources for BestSeller page/Smart watches/Google Pixel Watch 2.png" class="card_img">
+            <div class="info">
+                <p>Google Pixel Watch 2</p>
+            </div>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Smart watches/Samsung Galaxy Watch 6.png" class="card_img">
+            <p class="info">Samsung Galaxy Watch 6</p>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Smart watches/Huawei Watch GT 4.png" class="card_img">
+            <p class="info">Huawei Watch GT 4</p>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Smart watches/Xiaomi Watch S1.png" class="card_img">
+            <p class="info">Xiaomi Watch S1</p>
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="category_card">
+            <img src="resources for BestSeller page/Smart watches/Fitbit Versa 4.png" class="card_img">
+            <p class="info">Fitbit Versa 4</p>
+            <button class="add">Add To Cart</button>
+        </div>
+    </div>
+</div>
+    </div>
+    <!-- footer -->
+    <div id="main_footer" style="height:  118px;">
+        <div class="footer_column">
+            <div class="foot_title">Get Help</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="Contact.html">Support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Know More About Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="about.html">About Us</a>
+                </li>
+            </ul>
+            <a href="" target="_blank"><img src="resources for about page/face.png" alt="" width="32px"></a>
+            <a href="https://www.linkedin.com/in/symo-web-3a6693400" target="_blank"><img
+                    src="resources for about page/linkedin.png" style="margin-top: 2px;" alt="" width="32px"></a>
+
+            <a href="https://x.com/SYMO_Web/" target="_blank"><img src="resources for about page/x.png"
+                    style="margin-top: 3px;" alt="" width="32px"></a>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Join Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="Acccount.html">Your Account</a>
+                </li>
+                <li class="foot_link">
+                    <a href="ordes.html">Your Orders</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="afterFooter"></div>
+</body>
+
+</html>

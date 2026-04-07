@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Comparison</title>
+  </head>
+  <body>
+    <!-- this is the nav bar -->
+    <div class="beforeNav"></div>
+
+    <header class="nav">
+      <div class="header-left">
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button
+        ><a href="index.html"><img class="nav-img" src="Shared/logo.png" /></a>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search products, brands and categories"
+        />
+      </div>
+
+      <div class="header-right">
+        <div class="toggle-switch">
+          <label class="switch-label">
+            <input type="checkbox" class="checkbox" onclick="toggle()" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <button class="general-btn">Sign in/Up</button>
+        <button class="general-btn">Account</button>
+        <button class="cartBtn">
+          <a href="cart.html"><img src="Shared/shopping-cart.png" alt="" /></a>
+        </button>
+      </div>
+    </header>
+    <!-- ----------------------------------------------------- -->
+    <!-- this is the modal  -->
+    <div class="modal-screen">
+      <div class="sideBar" id="sideBar">
+        <div class="menuButton">
+          <h2>Menu</h2>
+          <button id="exit_button" onclick="disappear()">✕</button>
+        </div>
+        <div id="Menu_elements">
+        <a href="BestSeller.html"><button>Best Sellers</button></a>
+          <button onclick="window.open('comparison.html', '_self')">
+            Comparison
+          </button>
+          <button>Orders</button>
+          <button>Categories</button>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------- -->
+
+    <div class="capsule">
+      <p id="title">Product Comparison</p>
+      <div class="selection-top">
+        <div class="selbtntop">
+          <div class="imgselector">
+            <img
+              src="resources for comparison page/bloody 200.png"
+              id="img1"
+              alt=""
+              height="48px"
+            />
+            <div class="selector">
+              <select name="products" class="prds" onchange="changeimg()">
+                <optgroup label="mouses">
+                  <option value="ma342 gaming mouse">ma342 gaming mouse</option>
+                  <option value="bloody g200">bloody g200</option>
+                </optgroup>
+                <optgroup label="keyboards">
+                  <option value="redragon 552k">redragon 552k</option>
+                  <option value="Womier SK71 Pro">Womier SK71 Pro</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+
+          <button
+            class="addtcart-btn btn"
+            onclick="window.open('cart.html', '_self')"
+          >
+            Add to cart
+          </button>
+        </div>
+        <div class="selbtntop">
+          <div class="imgselector">
+            <img
+              src="resources for comparison page/bloody 200.png"
+              alt=""
+              id="img2"
+              height="48x"
+            />
+            <div class="selector">
+              <select name="products" class="prds" onchange="changeimg()">
+                <optgroup label="mouses">
+                  <option value="ma342 gaming mouse">ma342 gaming mouse</option>
+                  <option value="bloody g200">bloody g200</option>
+                </optgroup>
+                <optgroup label="keyboards">
+                  <option value="redragon 552k">redragon 552k</option>
+                  <option value="Womier SK71 Pro">Womier SK71 Pro</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+
+          <button
+            class="addtcart-btn btn"
+            onclick="window.open('cart.html', '_self')"
+          >
+            Add to cart
+          </button>
+        </div>
+      </div>
+      <button id="compare-btn" class="btn" onclick="compare()">
+        Compare using AI
+      </button>
+
+      <textarea name="ai-generated-comparison" id="aigen" readonly></textarea>
+    </div>
+
+    <!-- footer -->
+    <div id="main_footer" style="position: static">
+      <div class="footer_column">
+        <div class="foot_title">Get Help</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="support.com">Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <div class="foot_title">Know More About Us</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="aboutus.com">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <div class="foot_title">Join Us</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="Account.com">Your Account</a>
+          </li>
+          <li class="foot_link">
+            <a href="Orders.com">Your Orders</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>
