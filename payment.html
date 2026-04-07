@@ -8,32 +8,49 @@
   </head>
   <body>
     <!-- nav -->
-    <div class="beforeNav"></div>
-    <header class="nav">
+  <div class="beforeNav"></div>
+       <header class="nav">
       <div class="header-left">
-        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button>
-        <a href="index.html"> <img class="nav-img" src="Shared/logo.png" /></a>
-      </div>
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button><a href="index.html"><img class="nav-img" src="Shared/logo.png" /></a>
 
-      <div class="search-container" style="margin-right: 11rem">
-        <input
-          type="text"
-          class="search-bar"
-          placeholder="Search products, brands and categories"
-        />
+        
       </div>
-
+     
+    <div class="search-container">
+  <input type="text" class="search-bar" placeholder="Search products, brands and categories">
+</div>
+     
       <div class="header-right">
-        <a href="signIn.html"><button class="general-btn">Sign In</button></a>
+            <div class="toggle-switch" >
+  <label class="switch-label"  >
+    <input type="checkbox" class="checkbox" onclick="toggle()" >
+    <span class="slider" ></span>
+  </label>
+</div> 
+             <a href="signIn.html"><button class="general-btn">Sign In</button></a>
         <a href="signUp.html"><button class="general-btn">Sign Up</button></a>
         <a href="ordes.html"><button class="general-btn">Orders</button></a>
         <a href="Acccount.html"><button class="general-btn">Account</button></a>
-        <button class="cartBtn">
-          <a href="cart.html"><img src="Shared/shopping-cart.png" alt="" /></a>
-        </button>
+        <button class="cartBtn" ><a href="cart.html"><img src="Shared/shopping-cart.png" alt=""></a></button>
       </div>
     </header>
-        <!-- main -->
+        <!-- this is the modal  -->
+  <div class="modal-screen">
+      <div class="sideBar" id="sideBar">
+        <div class="menuButton">
+          <h2>Menu</h2>
+            <button id="exit_button" onclick="disappear()">✕</button>
+        </div>
+        <div id="Menu_elements">
+      <a href="BestSeller.html"><button>Best Sellers</button></a>
+          <a href="Comparison.html"> <button>Comparison</button></a> 
+       <a href="ordes.html"><button>Orders</button></a> 
+        <button>Categories</button>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------- -->
+      
     <div class="payment">
       <div id="leftside">
         <div class="payment-top">
@@ -233,7 +250,7 @@
           <hr />
           <div class="order-item">
             <img
-              src="resources for home page/product4.jpg"
+              src="resources for payment page/mecanical.png"
               width="52"
               alt="product"
             />
@@ -245,7 +262,7 @@
           <hr />
           <div class="order-item">
             <img
-              src="resources for home page/product6.jpg"
+              src="resources for payment page/microphone.png"
               width="52"
               alt="product"
             />
@@ -257,7 +274,7 @@
           <hr />
           <div class="order-item">
             <img
-              src="resources for home page/product7.jpg"
+              src="resources for payment page/keyboard.png"
               width="52"
               alt="product"
             />
@@ -328,4 +345,5 @@
         </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
