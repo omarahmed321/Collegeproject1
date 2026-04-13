@@ -1,292 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orders</title>
-        <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="Shared/favicon.ico">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Shared/favicon.ico" />
+  </head>
+  <body>
     <!-- Nav -->
-     <div class="beforeNav"></div>
-       <header class="nav">
+    <div class="beforeNav"></div>
+    <header class="nav">
       <div class="header-left">
-        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button><a href="index.html"><img class="nav-img" src="Shared/logo.png" /></a>
-
-        
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button
+        ><a href="index.html"><img class="nav-img" src="Shared/logo.png" /></a>
       </div>
-     
-    <div class="search-container">
-  <input type="text" class="search-bar" placeholder="Search products, brands and categories">
-</div>
-     
+
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search products, brands and categories"
+        />
+      </div>
+
       <div class="header-right">
-            <div class="toggle-switch" >
-  <label class="switch-label"  >
-    <input type="checkbox" class="checkbox" onclick="toggle()" >
-    <span class="slider" ></span>
-  </label>
-</div> 
-             <a href="signIn.html"><button class="general-btn">Sign In</button></a>
+        <div class="toggle-switch">
+          <label class="switch-label">
+            <input type="checkbox" class="checkbox" onclick="toggle()" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <a href="signIn.html"><button class="general-btn">Sign In</button></a>
         <a href="signUp.html"><button class="general-btn">Sign Up</button></a>
         <a href="ordes.html"><button class="general-btn">Orders</button></a>
         <a href="Acccount.html"><button class="general-btn">Account</button></a>
-        <button class="cartBtn" ><a href="cart.html"><img src="Shared/shopping-cart.png" alt=""></a></button>
+        <button class="cartBtn">
+          <a href="cart.html"><img src="Shared/shopping-cart.png" alt="" /></a>
+        </button>
       </div>
     </header>
     <!-- Modal  -->
-        <div class="modal-screen">
+    <div class="modal-screen">
       <div class="sideBar" id="sideBar">
         <div class="menuButton">
           <h2>Menu</h2>
-            <button id="exit_button" onclick="disappear()">✕</button>
+          <button id="exit_button" onclick="disappear()">✕</button>
         </div>
         <div id="Menu_elements">
-      <a href="BestSeller.html"><button>Best Sellers</button></a>
-          <a href="Comparison.html"> <button>Comparison</button></a> 
-      <a href="ordes.html"><button>Orders</button></a> 
-        <button>Categories</button>
+          <a href="BestSeller.html"><button>Best Sellers</button></a>
+          <a href="Comparison.html"> <button>Comparison</button></a>
+          <a href="ordes.html"><button>Orders</button></a>
+          <button>Categories</button>
         </div>
       </div>
     </div>
     <!-- body -->
-<h1 id="urOrders">Your Orders</h1>
-<div class="orders">
-
-   <div class="order">
-    <div class="upper" style="position: relative;">
-<div class="orderDate">
-    <p>Order placed</p>
-   
-    <p>20 June 2024</p>
-</div>
-<div class="orderTotal">
-    <p>Amount</p>
-<p>400$</p>
-</div>
-<div class="shippedTo">
-    <p>Shipped to</p>
-<p>Omar ahmed's House</p>
-</div>
-<p style=" position: absolute; right: 20px; font-size: 25px; top:20px">Order #XXXXXXXXXXXXXXXXXX</p>
-
-
-
-
-
-
-
-
-
-    </div>
-    <div class="lower">
-<img src="resources for orders page/iphone13mini.png" alt="">
-<div class="details">
-    <p>Iphone 13 mini </p>
-<p>Has arrived on 24 June 2024</p>
-</div>
-
-<button>Buy it again</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <div class="order">
-     <div class="upper" style="position: relative;">
-<div class="orderDate">
-    <p>Order placed</p>
-   
-    <p>21 June 2021</p>
-</div>
-<div class="orderTotal">
-    <p>Amount</p>
-<p>130$</p>
-</div>
-<div class="shippedTo">
-    <p>Shipped to</p>
-<p>Mostafa Sherif's House</p>
-</div>
-<p style=" position: absolute; right: 20px; font-size: 25px; top:20px">Order #XXXXXXXXXXXXXXXXXX</p>
-
-
-
-
-
-
-
-
-
-    </div>
-    <div class="lower">
-
-<img src="resources for orders page/aulakeyboard.png" alt="">
-<div class="details">
-    <p>Aula F75 Mechanical keyboard</p>
-<p>Has arrived on 24 June 2024</p>
-</div>
-
-<button>Buy it again</button>
-
-
-
-
-
-    </div>
-   </div>
-   <div class="order">
-      <div class="upper" style="position: relative;">
-<div class="orderDate">
-    <p>Order placed</p>
-   
-    <p>25 May 2022</p>
-</div>
-<div class="orderTotal">
-    <p>Amount</p>
-<p>380$</p>
-</div>
-<div class="shippedTo">
-    <p>Shipped to</p>
-<p>Youssef Hany's House</p>
-</div>
-<p style=" position: absolute; right: 20px; font-size: 25px; top:20px">Order #XXXXXXXXXXXXXXXXXX</p>
-
-
-
-
-
-
-
-
-
-    </div>
-    <div class="lower">
-        <img src="resources for orders page/11 pro max.png" alt="">
-<div class="details">
-    <p>Iphone 11 pro max</p>
-<p>Has arrived on 24 June 2024</p>
-</div>
-
-<button>Buy it again</button>
-    </div>
-   </div>
-   <div class="order">
-<div class="upper" style="position: relative;">
-<div class="orderDate">
-    <p>Order placed</p>
-   
-    <p>2 January 2023</p>
-</div>
-<div class="orderTotal">
-    <p>Amount</p>
-<p>1200$</p>
-</div>
-<div class="shippedTo">
-    <p>Shipped to</p>
-<p>Saif Tarek's House</p>
-</div>
-<p style=" position: absolute; right: 20px; font-size: 25px; top:20px">Order #XXXXXXXXXXXXXXXXXX</p>
-
-
-
-
-
-
-
-
-
-    </div>
-    <div class="lower">
-        <img src="resources for orders page/laptop.png" alt="">
-<div class="details">
-    <p>Asus Rog Strix g16</p>
-<p>Has arrived on 24 June 2024</p>
-</div>
-
-<button>Buy it again</button>
-    </div>
-   </div>
- 
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <!-- footer -->
-        <!-- footer -->
-      <div id="main_footer" style="height:  118px;">
-        <div class="footer_column">
-            <div class="foot_title">Get Help</div>
-            <ul class="foot_li">
-                <li class="foot_link">
-                    <a href="Contact.html">Support</a>
-                </li>
-            </ul>
+    <h1 id="urOrders">Your Orders</h1>
+    <div class="orders">
+      <div class="order">
+        <div class="upper" style="position: relative">
+          <div class="orderDate">
+            <p>Order placed</p>
+
+            <p>20 June 2024</p>
+          </div>
+          <div class="orderTotal">
+            <p>Amount</p>
+            <p>400$</p>
+          </div>
+          <div class="shippedTo">
+            <p>Shipped to</p>
+            <p>Omar ahmed's House</p>
+          </div>
+          <p
+            style="position: absolute; right: 20px; font-size: 25px; top: 20px"
+          >
+            Order #XXXXXXXXXXXXXXXXXX
+          </p>
         </div>
-        <div class="footer_column">
-            <div class="foot_title">Know More About Us</div>
-            <ul class="foot_li">
-                <li class="foot_link">
-                    <a href="about.html">About Us</a>
-                </li>
-            </ul>
-              <a href="" target="_blank"><img src="resources for about page/face.png" alt="" width="32px"></a>
-<a href="https://www.linkedin.com/in/symo-web-3a6693400" target="_blank"><img src="resources for about page/linkedin.png" style="margin-top: 2px;" alt="" width="32px"></a>
+        <div class="lower">
+          <img src="resources for orders page/iphone13mini.png" alt="" />
+          <div class="details">
+            <p>Iphone 13 mini</p>
+            <p>Has arrived on 24 June 2024</p>
+          </div>
 
-<a href="https://x.com/SYMO_Web/" target="_blank"><img src="resources for about page/x.png" style="margin-top: 3px;" alt="" width="32px"></a>
+          <button>Buy it again</button>
         </div>
-        <div class="footer_column">
-            <div class="foot_title">Join Us</div>
-            <ul class="foot_li">
-                <li class="foot_link">
-                    <a href="Acccount.html">Your Account</a>
-                </li>
-                <li class="foot_link">
-                    <a href="ordes.html">Your Orders</a>
-                </li>
-            </ul>
+      </div>
+
+      <div class="order">
+        <div class="upper" style="position: relative">
+          <div class="orderDate">
+            <p>Order placed</p>
+
+            <p>21 June 2021</p>
+          </div>
+          <div class="orderTotal">
+            <p>Amount</p>
+            <p>130$</p>
+          </div>
+          <div class="shippedTo">
+            <p>Shipped to</p>
+            <p>Mostafa Sherif's House</p>
+          </div>
+          <p
+            style="position: absolute; right: 20px; font-size: 25px; top: 20px"
+          >
+            Order #XXXXXXXXXXXXXXXXXX
+          </p>
         </div>
+        <div class="lower">
+          <img src="resources for orders page/aulakeyboard.png" alt="" />
+          <div class="details">
+            <p>Aula F75 Mechanical keyboard</p>
+            <p>Has arrived on 24 June 2024</p>
+          </div>
+
+          <button>Buy it again</button>
+        </div>
+      </div>
+      <div class="order">
+        <div class="upper" style="position: relative">
+          <div class="orderDate">
+            <p>Order placed</p>
+
+            <p>25 May 2022</p>
+          </div>
+          <div class="orderTotal">
+            <p>Amount</p>
+            <p>380$</p>
+          </div>
+          <div class="shippedTo">
+            <p>Shipped to</p>
+            <p>Youssef Hany's House</p>
+          </div>
+          <p
+            style="position: absolute; right: 20px; font-size: 25px; top: 20px"
+          >
+            Order #XXXXXXXXXXXXXXXXXX
+          </p>
+        </div>
+        <div class="lower">
+          <img src="resources for orders page/11 pro max.png" alt="" />
+          <div class="details">
+            <p>Iphone 11 pro max</p>
+            <p>Has arrived on 24 June 2024</p>
+          </div>
+
+          <button>Buy it again</button>
+        </div>
+      </div>
+      <div class="order">
+        <div class="upper" style="position: relative">
+          <div class="orderDate">
+            <p>Order placed</p>
+
+            <p>2 January 2023</p>
+          </div>
+          <div class="orderTotal">
+            <p>Amount</p>
+            <p>1200$</p>
+          </div>
+          <div class="shippedTo">
+            <p>Shipped to</p>
+            <p>Saif Tarek's House</p>
+          </div>
+          <p
+            style="position: absolute; right: 20px; font-size: 25px; top: 20px"
+          >
+            Order #XXXXXXXXXXXXXXXXXX
+          </p>
+        </div>
+        <div class="lower">
+          <img src="resources for orders page/laptop.png" alt="" />
+          <div class="details">
+            <p>Asus Rog Strix g16</p>
+            <p>Has arrived on 24 June 2024</p>
+          </div>
+
+          <button>Buy it again</button>
+        </div>
+      </div>
     </div>
-    <div class="afterFooter"></div>
-   
-</body>
-   <script src="index.js"></script>
+
+  
+    <!-- footer -->
+    <div id="main_footer" style="height: 118px; position:static;">
+      <div class="footer_column">
+        <div class="foot_title">Get Help</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="Contact.html">Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <div class="foot_title">Know More About Us</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+        <a href="" target="_blank"
+          ><img src="resources for about page/face.png" alt="" width="32px"
+        /></a>
+        <a href="https://www.linkedin.com/in/symo-web-3a6693400" target="_blank"
+          ><img
+            src="resources for about page/linkedin.png"
+            style="margin-top: 2px"
+            alt=""
+            width="32px"
+        /></a>
+
+        <a href="https://x.com/SYMO_Web/" target="_blank"
+          ><img
+            src="resources for about page/x.png"
+            style="margin-top: 3px"
+            alt=""
+            width="32px"
+        /></a>
+      </div>
+      <div class="footer_column">
+        <div class="foot_title">Join Us</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="Acccount.html">Your Account</a>
+          </li>
+          <li class="foot_link">
+            <a href="ordes.html">Your Orders</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+  <script src="index.js"></script>
 </html>
