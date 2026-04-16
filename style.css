@@ -1254,9 +1254,9 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
 }
 /* -----------------------------------------About page------------------------------------------------ */
 .about {
-  height: 50vh;
+  height: 90vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
 
   width: 65%;
@@ -1293,6 +1293,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
   }
 
   .leftSide {
+    height: 50%;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 30px;
@@ -1320,6 +1321,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
     }
   }
 }
+
 /* -----------------------------------------Contact page------------------------------------------------ */
 #contact-main-wrapper {
   max-width: 1000px;
