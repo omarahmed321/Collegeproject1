@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Shared/favicon.ico">
+  </head>
+  <body>
+    <!-- this is the nav bar -->
+    <div class="beforeNav"></div>
+       <header class="nav">
+      <div class="header-left">
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button>
+<a href="index.html">   <img class="nav-img" src="Shared/logo.png" /></a>
+     
+      </div>
+     
+    <div class="search-container" style="margin-right: 11rem;">
+  <input type="text" class="search-bar" placeholder="Search products, brands and categories">
+</div>
+     
+      <div class="header-right">
+
+        <a href="signIn.html"><button class="general-btn">Sign In</button></a>
+        <a href="signUp.html"><button class="general-btn">Sign Up</button></a>
+        <a href="orders.html"><button class="general-btn">Orders</button></a>
+         <a href="Acccount.html"><button class="general-btn">Account</button></a>
+        <button class="cartBtn" ><a href="cart.html"><img src="Shared/shopping-cart.png" alt=""></a></button>
+      </div>
+    </header>
+    <!-- ----------------------------------------------------- -->
+    <!-- this is the modal  -->
+   <div class="modal-screen" onclick="modelOverlay(event)">
+      <div class="sideBar" id="sideBar">
+        <div class="menuButton">
+          <h2>Menu</h2>
+            <button id="exit_button" onclick="disappear()">✕</button>
+        </div>
+        <div id="Menu_elements">
+      <a href="BestSeller.html"><button>Best Sellers</button></a>
+          <a href="Comparison.html"> <button>Comparison</button></a> 
+    <a href="orders.html"><button>Orders</button></a> 
+      
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------- -->
+
+     <!-- this is the main content -->
+    <div class="heroSection">
+      <!-- this is the hero banner for promotional content -->
+      <div class="banner">
+        <button class="arrow left-arrow" onclick="slide(-1)">‹</button>
+
+        <div class="slider">
+          <div class="slide" width="100">
+            <img src="resources for home page/slide1.jpg" />
+          </div>
+          <div class="slide" width="100">
+            <img src="resources for home page/slide2.jpg" alt="keeb" />
+          </div>
+          <div class="slide">
+            <img src="resources for home page/slide4.jpg" alt="" />
+          </div>
+        </div>
+
+        <button class="arrow right-arrow" onclick="slide(1)">›</button>
+      </div>
+
+      <!-- row of elements 1 -->
+      <div class="elements el1">
+        <div class="element">
+          <div class="elementUpper">
+            <p>Dominate Every Keystroke</p>
+            <img
+              src="resources for home page/product1.png"
+              alt="Gaming Mouse"
+            />
+          </div>
+          <div class="elementFooter">
+            <p>
+              Experience lightning-fast actuation and customizable RGB lighting
+              in a compact, space-saving tenkeyless design.
+            </p>
+          </div>
+        </div>
+        <div class="element">
+          <div class="elementUpper">
+            <p>Click heads at the speed of light.</p>
+            <img
+              src="https://m.media-amazon.com/images/I/61AcT0ZuO3L._AC_UY218_.jpg"
+              alt="Gaming Mouse"
+            />
+          </div>
+          <div class="elementFooter">
+            <p>
+              The RGB on this mouse is scientifically proven to increase your
+              skill by at least 10,000%.
+            </p>
+          </div>
+        </div>
+        <div class="element">
+          <div class="elementUpper">
+            <p>Hear Every Footstep</p>
+            <img
+              src="resources for home page/product2.jpeg"
+              alt="Gaming Headphone"
+            />
+          </div>
+          <div class="elementFooter">
+            <p>
+              Gain a competitive advantage with crystal-clear spatial audio,
+              immersive surround sound, and all-day ergonomic comfort.
+            </p>
+          </div>
+        </div>
+
+        <div class="element">
+          <div class="elementUpper">
+            <p>Smooth Actuation, Brilliant RGB</p>
+            <img src="resources for home page/product4.jpg" alt="switches" />
+          </div>
+          <div class="elementFooter">
+            <p>
+              Upgrade your typing with precision-engineered, wobble-free
+              switches. The translucent housing maximizes lighting for a
+              flawless and vibrant custom build.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- row of elements 2 -->
+      <div class="elements el2">
+        <div class="element">
+          <div class="elementUpper">
+            <p>See EVERYTHING.</p>
+            <img
+              src="resources for home page/product5.jpg"
+              alt="Ultrawide Monitor"
+            />
+          </div>
+          <div class="elementFooter">
+            <p>
+              49 inches of curved glory. Who needs peripheral vision in the real
+              world anyway?
+            </p>
+          </div>
+        </div>
+
+        <div class="element">
+          <div class="elementUpper">
+            <p>Broadcast-Grade Audio</p>
+            <img src="resources for home page/product6.jpg" alt="Micorphone" />
+          </div>
+          <div class="elementFooter">
+            <p>
+              Elevate your stream and voice comms with studio-quality vocal
+              capture, built-in shock mounting, and active background noise
+              suppression.
+            </p>
+          </div>
+        </div>
+        <div class="element">
+          <div class="elementUpper">
+            <p>Unrivaled Thermal Performance</p>
+            <img src="resources for home page/product8.jpg" alt="noctua fan" />
+          </div>
+          <div class="elementFooter">
+            <p>
+              Deliver massive airflow and superior static pressure in near-total
+              silence. Keep your high-end components frosty under the heaviest
+              workloads.
+            </p>
+          </div>
+        </div>
+        <div class="element">
+          <div class="elementUpper">
+            <p>Flawless Digital Artistry</p>
+            ``
+            <img
+              src="resources for home page/product9.jpg"
+              alt="Graphic tablet"
+            />
+          </div>
+          <div class="elementFooter">
+            <p>
+              Elevate your digital artistry with industry-leading pressure
+              sensitivity. Designed for a natural pen-on-paper feel, featuring
+              customizable hotkeys to streamline your creative workflow.
+            </p>
+          </div>
+        </div>
+      </div>
+     <!-- block of elements --> 
+    <div class="carousell">
+      <p>Don't miss out on our top sellers!</p>
+      <div class="items">
+        <div class="element">
+          <div class="elementUpper">
+            <img
+              src="resources for home page/carr1.jpg"
+              alt="Ultrawide Monitor"
+            />
+          </div>
+        </div>
+        <div class="element">
+            <img src="resources for home page/carr2.jpg" alt="Micorphone" />
+        </div>
+        <div class="element">
+            <img src="resources for home page/carr3.jpg" alt="noctua fan" />
+          
+          </div>
+        <div class="element">
+            <img
+              src="resources for home page/carr4.jpg"
+              alt="Graphic tablet"
+            />
+             </div>
+<div class="element">
+           <a href="Product-page.html"><img src="resources for home page/carr5.jpg"alt="Ultrawide dwMonitor"/></a> 
+        </div>
+<div class="element">
+            <img
+              src="resources for home page/carr6.jpg"
+              alt="Ultrawide Monitor"
+            />
+        </div>
+<div class="element">
+            <img
+              src="resources for home page/carr7.jpg"
+              alt="Ultrawide Monitor"
+            />
+        </div>
+<div class="element">
+            <img
+              src="resources for home page/carr8.jpg"
+              alt="Ultrawide Monitor"
+            />
+        </div>
+       </div>
+
+        </div>
+      </div>
+<!-- footer -->
+       <div id="main_footer" style=" position: static;">
+        <div class="footer_column">
+            <div class="foot_title">Get Help</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="Contact.html">Support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Know More About Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="about.html">About Us</a>
+                </li>
+            </ul>
+                    <a href="" target="_blank"><img src="resources for about page/face.png" alt="" width="32px"></a>
+<a href="https://www.linkedin.com/in/symo-web-3a6693400" target="_blank"><img src="resources for about page/linkedin.png" style="margin-top: 2px;" alt="" width="32px"></a>
+
+<a href="https://x.com/SYMO_Web/" target="_blank"><img src="resources for about page/x.png" style="margin-top: 3px;" alt="" width="32px"></a>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Join Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="Acccount.html">Your Account</a>
+                </li>
+                <li class="foot_link">
+                    <a href="orders.html">Your Orders</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Shared/favicon.ico" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="beforeNav"></div>
+    <header class="nav">
+      <div class="header-left">
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button
+        ><a href="index.html"><img class="nav-img" src="Shared/logo.png" /></a>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search products, brands and categories"
+        />
+      </div>
+
+      <div class="header-right">
+        <div class="toggle-switch">
+          <label class="switch-label">
+            <input type="checkbox" class="checkbox" onclick="toggle()" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <a href="signIn.html"><button class="general-btn">Sign In</button></a>
+        <a href="signUp.html"><button class="general-btn">Sign Up</button></a>
+        <a href="orders.html"><button class="general-btn">Orders</button></a>
+        <a href="Acccount.html"><button class="general-btn">Account</button></a>
+        <button class="cartBtn">
+          <a href="cart.html"><img src="Shared/shopping-cart.png" alt="" /></a>
+        </button>
+      </div>
+    </header>
+    <!-- Modal  -->
+    <!-- this is the modal  -->
+   <div class="modal-screen" onclick="modelOverlay(event)">
+      <div class="sideBar" id="sideBar">
+        <div class="menuButton">
+          <h2>Menu</h2>
+            <button id="exit_button" onclick="disappear()">✕</button>
+        </div>
+        <div id="Menu_elements">
+      <a href="BestSeller.html"><button>Best Sellers</button></a>
+          <a href="Comparison.html"> <button>Comparison</button></a> 
+       <a href="orders.html"><button>Orders</button></a> 
+      
+        </div>
+      </div>
+    </div>
+    <h1 id="urOrders" style="margin: 20px 0;">Your Orders</h1>
+    <table id = "T_order">
+        <tr  style="background-color: #ffecd794">
+            <th style="font-size:larger;">Product</th>
+            <th style="font-size:larger;">Order Date</th>
+            <th style="font-size:larger;">Price</th>
+            <th style="font-size:larger;">Shipping Location</th>
+            <th style="font-size:larger;">Arrival Time</th>
+            <th style="font-size:larger;">Order Number</th>
+        </tr>
+        <tr>
+            <th>
+                <img src="resources for orders page/iphone13mini.png" alt="" class="alt"/>
+                <p>Iphone 13 mini</p>
+            </th>
+            <th>
+                20 June 2024
+            </th>
+            <th>400$</th>
+            <th>Omar ahmed's House</th>
+            <th>24 June 2024</th>
+            <th>#1231412</th>
+        </tr>
+        <tr>
+            <th>
+                <img src="resources for orders page/aulakeyboard.png" alt="" class="alt"/>
+                <p>Aula F75 keyboard</p>
+            </th>
+            <th>
+                21 June 2024
+            </th>
+            <th>130$</th>
+            <th>Mostafa Sherif's House</th>
+            <th>29 June 2024</th>
+            <th>#2984232</th>
+        </tr>
+        <tr>
+            <th>
+                <img src="resources for orders page/11 pro max.png" alt="" class="alt"/>
+                <p>Iphone 11 pro max</p>
+            </th>
+            <th>
+                25 May 2022
+            </th>
+            <th>380$</th>
+            <th>Youssef Hany's House</th>
+            <th>29 May 2022</th>
+            <th>#2952332</th>
+        </tr>
+        <tr>
+            <th>
+                <img src="resources for orders page/laptop.png" alt="" class="alt"/>
+                <p>Asus Rog Strix g16</p>
+            </th>
+            <th>
+                2 January 2023
+            </th>
+            <th>380$</th>
+            <th>Saif Tarek's House</th>
+            <th>24 June 2024</th>
+            <th>#2952332</th>
+        </tr>
+    </table>
+<!-- footer -->
+    <div id="main_footer" style="height: 118px; position:static;">
+      <div class="footer_column">
+        <div class="foot_title">Get Help</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="Contact.html">Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <div class="foot_title">Know More About Us</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+        <a href="" target="_blank"
+          ><img src="resources for about page/face.png" alt="" width="32px"
+        /></a>
+        <a href="https://www.linkedin.com/in/symo-web-3a6693400" target="_blank"
+          ><img
+            src="resources for about page/linkedin.png"
+            style="margin-top: 2px"
+            alt=""
+            width="32px"
+        /></a>
+
+        <a href="https://x.com/SYMO_Web/" target="_blank"
+          ><img
+            src="resources for about page/x.png"
+            style="margin-top: 3px"
+            alt=""
+            width="32px"
+        /></a>
+      </div>
+      <div class="footer_column">
+        <div class="foot_title">Join Us</div>
+        <ul class="foot_li">
+          <li class="foot_link">
+            <a href="Acccount.html">Your Account</a>
+          </li>
+          <li class="foot_link">
+            <a href="orders.html">Your Orders</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </body>
+  <script src="index.js"></script>
+</html>

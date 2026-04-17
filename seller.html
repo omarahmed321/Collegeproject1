@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Shared/favicon.ico">
+    <title>Seller Page</title>
+  </head>
+  <body>
+ 
+ <!-- nav -->
+    <div class="beforeNav"></div>
+       <header class="nav">
+      <div class="header-left">
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button><a href="index.html"><img class="nav-img" src="Shared/logo.png" /></a>
+
+        
+      </div>
+     
+    <div class="search-container">
+  <input type="text" class="search-bar" placeholder="Search products, brands and categories">
+</div>
+     
+      <div class="header-right">
+            <div class="toggle-switch" >
+  <label class="switch-label"  >
+    <input type="checkbox" class="checkbox" onclick="toggle()" >
+    <span class="slider" ></span>
+  </label>
+</div> 
+             <a href="signIn.html"><button class="general-btn">Sign In</button></a>
+        <a href="signUp.html"><button class="general-btn">Sign Up</button></a>
+        <a href="orders.html"><button class="general-btn">Orders</button></a>
+        <a href="Acccount.html"><button class="general-btn">Account</button></a>
+        <button class="cartBtn" ><a href="cart.html"><img src="Shared/shopping-cart.png" alt=""></a></button>
+      </div>
+    </header>
+    <!-- modal -->
+    <!-- this is the modal  -->
+   <div class="modal-screen" onclick="modelOverlay(event)">
+      <div class="sideBar" id="sideBar">
+        <div class="menuButton">
+          <h2>Menu</h2>
+            <button id="exit_button" onclick="disappear()">✕</button>
+        </div>
+        <div id="Menu_elements">
+      <a href="BestSeller.html"><button>Best Sellers</button></a>
+          <a href="Comparison.html"> <button>Comparison</button></a> 
+       <a href="orders.html"><button>Orders</button></a> 
+      
+        </div>
+      </div>
+    </div>
+
+<!-- sections -->
+    <div class="sections">
+      <section class="left-section section">
+        <div class="seller-id">
+          <img src="resources for seller page/logo3.webp" alt="seller profile picture" width="250px">
+          <p id="seller-name">AquaNova Store</p>
+        </div> 
+
+
+        <div class="seller-stats">
+          <div class="row-info">
+            <div class="small-box">
+              <p class="title">Seller Rating</p>
+              <div class="rating">
+                <p class="rating-number">4.3</p>
+                <p class="rating-stars rating-stars-filled">★★★★</p>
+                 <p class="rating-stars ">★</p> 
+              </div>
+              <p class="small-box-footer">82% Positive Ratings</p>
+            </div>
+
+            <div>
+              <div class="small-box">
+                <p class="title">Customers</p>  
+                <div class="rating">
+                  <p class="rating-number">30K+</p>
+                </div>
+                <p class="small-box-footer">During the last 70 days!</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="middle-box">
+              <div class="info-box">
+                <p class="box-title">Seller Information</p>  
+                <div class="info-body">
+                  <ul>
+ <li> Trusted electronics seller since 2018</li>
+                  <li>Specializes in smartphones, accessories, and smart devices</li>
+                  <li>Fast shipping and reliable customer service</li>
+                  <li>All products are 100% original with warranty</li>
+                 
+                    
+                     <div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+
+      <section class="middle-section sections">
+        <div class="big-box">
+       <div class="upperContainer">
+   
+           <p class="title">Seller Ratings & Reviews</p>
+          <div class="star-counter">
+            <div class="stars">
+              <p class="rating-stars rating-stars-filled">★</p>  
+            <p class="rating-stars rating-stars-filled">★</p>
+            <p class="rating-stars rating-stars-filled">★</p>
+            <p class="rating-stars rating-stars-filled">★</p>
+            <p class="rating-stars rating-stars-filled">★</p>
+           
+            </div>
+            
+            <div class="rating-progress-bar-container">
+              <div class="rating-progress-bar" style="--target:60%;">
+               
+              </div>
+               
+            </div>
+            <p class="percentage">60%</p>
+          </div>
+          <div class="star-counter">
+            <div class="stars">
+              <p class="rating-stars rating-stars-filled">★</p>  
+            <p class="rating-stars rating-stars-filled">★</p>
+            <p class="rating-stars rating-stars-filled">★</p>
+            <p class="rating-stars rating-stars-filled">★</p>
+            </div>
+            
+            <div class="rating-progress-bar-container">
+              <div class="rating-progress-bar" style="--target:23%;">
+              </div>
+            </div>
+               <p class="percentage">23%</p>
+          </div>
+          <div class="star-counter">
+            <div class="stars">
+              <p class="rating-stars rating-stars-filled">★</p>  
+            <p class="rating-stars rating-stars-filled">★</p>
+            <p class="rating-stars  rating-stars-filled">★</p>
+            </div>
+            
+            <div class="rating-progress-bar-container">
+              <div class="rating-progress-bar" style="--target:10%;">
+              </div>
+            </div>
+               <p class="percentage">10%</p>
+          </div>
+          <div class="star-counter">
+            <div class="stars">
+              <p class="rating-stars rating-stars-filled">★</p>  
+            <p class="rating-stars  rating-stars-filled">★</p>
+            </div>
+            
+            <div class="rating-progress-bar-container">
+              <div class="rating-progress-bar" style="--target:40%;">
+              </div>
+            </div>
+               <p class="percentage">40%</p>
+          </div>
+          <div class="star-counter">
+            <div class="stars">
+               <p class="rating-stars   rating-stars-filled">★</p>  
+            </div>
+           
+            <div class="rating-progress-bar-container">
+              <div class="rating-progress-bar"style="--target:30%;">
+              </div>
+            </div>
+               <p class="percentage">30%</p>
+          </div>
+       </div>
+          <div class="comments">
+            <div class="comment">
+              <div class="user-section">
+                <img src="resources for seller page/comments.webp" alt="user profile picture">
+                <p class="name">Omar Ahmed</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                </div>
+              </div>
+              <div class="content">
+                <p>The product exceeded my expectations. Fast delivery and great packaging</p>
+              </div>
+
+            </div>
+           <div class="comment">
+              <div class="user-section">
+                <img src="resources for seller page/comments.webp" alt="user profile picture">
+                <p class="name">Mostafa Mohammed</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                </div>
+              </div>
+              <div class="content">
+                <p>Good product, does what it says. Shipping was fast too</p>
+              </div>
+
+            </div>
+            
+ <div class="comment">
+              <div class="user-section">
+                <img src="resources for seller page/comments.webp" alt="user profile picture">
+                <p class="name">Saif Tarek</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p> 
+                     <p class="rating-stars ">★</p>
+                        <p class="rating-stars ">★</p> 
+                  
+                </div>
+              </div>
+              <div class="content">
+                <p>The product did not meet my expectations at all. The quality feels cheap and it stopped working after a short time.</p>
+              </div>
+
+            </div>
+           <div class="comment">
+              <div class="user-section">
+                <img src="resources for seller page/comments.webp" alt="user profile picture">
+                <p class="name">Youssef Hany</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                     <p class="rating-stars ">★</p>
+                   
+                </div>
+              </div>
+              <div class="content">
+                <p>Really impressed with the quality and performance. Fast delivery and exactly as described.</p>
+              </div>
+
+            </div>
+   
+      
+          </div>
+        </div>
+      </section>
+      <section class="sections right-section">
+        <p class="title">Top Selling</p> 
+        <div class="big-box top-selling"> 
+          
+          <div class="top-selling-product">
+            <img src="resources for home page/carr1.jpg" width="250px" alt="product">
+            <div class="product-info">
+              <p>Laptop acer</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars rating-stars-filled ">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p> 
+                     <p class="rating-stars ">★</p> 
+                    
+                </div>
+              <p>$599.9</p>
+ 
+            </div>
+
+          </div>
+    <div class="top-selling-product">
+            <img src="resources for home page/carr2.jpg" width="250px" alt="product">
+            <div class="product-info">
+              <p>amd laptop</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars rating-stars-filled">★</p>  
+                </div>
+              <p>$999.9</p>
+ 
+            </div>
+
+          </div>
+    <div class="top-selling-product">
+            <img src="resources for home page/carr3.jpg" width="250px" alt="product">
+            <div class="product-info">
+              <p>Rog ally</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                </div>
+              <p>$499.9</p>
+ 
+            </div>
+
+          </div>
+           <div class="top-selling-product">
+            <img src="resources for home page/carr4.jpg" width="250px" alt="product">
+            <div class="product-info">
+              <p>Gaming laptop</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars rating-stars-filled ">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                </div>
+              <p>$799.9</p>
+ 
+            </div>
+
+          </div>
+           <div class="top-selling-product">
+            <img src="resources for home page/carr5.jpg" width="250px" alt="product">
+            <div class="product-info">
+              <p>Hp Laptop</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars rating-stars-filled ">★</p> 
+                     <p class="rating-stars ">★</p> 
+                      <p class="rating-stars ">★</p> 
+              
+                </div>
+              <p>$299.9</p>
+ 
+            </div>
+
+          </div>
+           <div class="top-selling-product">
+            <img src="resources for home page/carr6.jpg" width="250px" alt="product">
+            <div class="product-info">
+              <p>Noctua fans pc</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars rating-stars-filled ">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                </div>
+              <p>$40</p>
+ 
+            </div>
+
+          </div>
+           <div class="top-selling-product">
+            <img src="resources for home page/carr7.jpg" width="250px" alt="product">
+            <div class="product-info">
+              <p>Noctua Powersupply</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars rating-stars-filled ">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                </div>
+              <p>$100</p>
+ 
+            </div>
+
+          </div>
+           <div class="top-selling-product">
+            <img src="resources for home page/carr8.jpg" width="250px"  alt="product">
+            <div class="product-info">
+              <p>lian li fans</p>
+                <div class="stars">
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars rating-stars-filled ">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                  <p class="rating-stars  rating-stars-filled">★</p>  
+                </div>
+              <p>$139.9</p>
+ 
+            </div>
+
+          </div>
+        
+
+      </section>
+</div>
+ 
+
+<!-- Footer -->
+    <!-- footer -->
+      <div id="main_footer" style="height:  118px;">
+        <div class="footer_column">
+            <div class="foot_title">Get Help</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="Contact.html">Support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Know More About Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="about.html">About Us</a>
+                </li>
+            </ul>
+              <a href="" target="_blank"><img src="resources for about page/face.png" alt="" width="32px"></a>
+<a href="https://www.linkedin.com/in/symo-web-3a6693400" target="_blank"><img src="resources for about page/linkedin.png" style="margin-top: 2px;" alt="" width="32px"></a>
+
+<a href="https://x.com/SYMO_Web/" target="_blank"><img src="resources for about page/x.png" style="margin-top: 3px;" alt="" width="32px"></a>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Join Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="Acccount.html">Your Account</a>
+                </li>
+                <li class="foot_link">
+                    <a href="orders.html">Your Orders</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="afterFooter"></div>
+ </body>
+ <script src="index.js"></script>
+</html>

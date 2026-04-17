@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css" />
+ <link rel="icon" href="Shared/favicon.ico">
+  </head>
+
+  <body>
+    <!-- this is the nav bar -->
+    <div class="beforeNav"></div>
+       <header class="nav">
+      <div class="header-left">
+        <button id="hamburger" class="noback-btn" onclick="appear()">≡</button><a href="index.html"><img class="nav-img" src="Shared/logo.png" /></a>
+
+        
+      </div>
+     
+    <div class="search-container">
+  <input type="text" class="search-bar" placeholder="Search products, brands and categories">
+</div>
+     
+      <div class="header-right">
+            <div class="toggle-switch" >
+  <label class="switch-label"  >
+    <input type="checkbox" class="checkbox" onclick="toggle()" >
+    <span class="slider" ></span>
+  </label>
+</div> 
+             <a href="signIn.html"><button class="general-btn">Sign In</button></a>
+        <a href="signUp.html"><button class="general-btn">Sign Up</button></a>
+        <a href="orders.html"><button class="general-btn">Orders</button></a>
+        <a href="Acccount.html"><button class="general-btn">Account</button></a>
+        <button class="cartBtn" ><a href="cart.html"><img src="Shared/shopping-cart.png" alt=""></a></button>
+      </div>
+    </header>
+    <!-- ----------------------------------------------------- -->
+    <!-- this is the modal  -->
+   <div class="modal-screen" onclick="modelOverlay(event)">
+      <div class="sideBar" id="sideBar">
+        <div class="menuButton">
+          <h2>Menu</h2>
+            <button id="exit_button" onclick="disappear()">✕</button>
+        </div>
+        <div id="Menu_elements">
+      <a href="BestSeller.html"><button>Best Sellers</button></a>
+          <a href="Comparison.html"> <button>Comparison</button></a> 
+       <a href="orders.html"><button>Orders</button></a> 
+      
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------- -->
+
+    <h1 style="margin-bottom: 60px; margin-top: 40px; margin-left: 20px">
+      Your Cart
+    </h1>
+
+    <div class="cart-container">
+      <div class="cart-items">
+        <div class="cart-item">
+          <div class="product">
+            <image
+              src="resources for cart page/iphone 17 pro max.webp"
+              class="image"
+            ></image>
+            <div class="details">
+              <h3>Iphone 17 pro max</h3>
+              <br />
+              <p class="price-text"> <strong>price:$1120</strong></p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="minus">-</button>
+            <span class="qty">1</span>
+            <button class="plus">+</button>
+            <button class="remove">Remove</button>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="product">
+            <image
+              src="resources for cart page/5070.webp"
+              class="image"
+            ></image>
+            <div class="details">
+              <h3>Rtx 5070 Graphics Card</h3>
+              <br />
+              <p class="price-text"> <strong>price:$720</strong></p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="minus">-</button>
+            <span class="qty">1</span>
+            <button class="plus">+</button>
+            <button class="remove">Remove</button>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="product">
+            <image
+              src="resources for cart page/iphone_x-removebg-preview.png"
+              class="image"
+            ></image>
+
+            <div class="details">
+              <h3>Iphone X</h3>
+              <br />
+              <p class="price-text"> <strong>price:$380</strong></p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="minus">-</button>
+            <span class="qty">1</span>
+            <button class="plus">+</button>
+            <button class="remove">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary">
+        <h2>Order Summary</h2>
+
+        <p class="labels">Subtotal: $200</p>
+        <p class="labels">Shipping: $10</p>
+        <p class="labels">Tax: $5</p>
+
+        <h3 id="Total">Total: $215</h3>
+
+       <button class="checkout" onclick="checkout()" <style="color: white;">Proceed to Checkout </button>
+      </div>
+    </div>
+
+    <!-- footer -->
+   <!-- footer -->
+      <div id="main_footer" style="height:  118px;">
+        <div class="footer_column">
+            <div class="foot_title">Get Help</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="Contact.html">Support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Know More About Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="about.html">About Us</a>
+                </li>
+            </ul>
+              <a href="" target="_blank"><img src="resources for about page/face.png" alt="" width="32px"></a>
+<a href="https://www.linkedin.com/in/symo-web-3a6693400" target="_blank"><img src="resources for about page/linkedin.png" style="margin-top: 2px;" alt="" width="32px"></a>
+
+<a href="https://x.com/SYMO_Web/" target="_blank"><img src="resources for about page/x.png" style="margin-top: 3px;" alt="" width="32px"></a>
+        </div>
+        <div class="footer_column">
+            <div class="foot_title">Join Us</div>
+            <ul class="foot_li">
+                <li class="foot_link">
+                    <a href="Acccount.html">Your Account</a>
+                </li>
+                <li class="foot_link">
+                    <a href="orders.html">Your Orders</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="afterFooter"></div>
+    
+  </body>
+<script src="index.js"> 
+</script>
+
+<script>
+  initCart();
+  updateTotals();
+</script>
+</html>
