@@ -71,13 +71,13 @@
             <div class="details">
               <h3>Iphone 17 pro max</h3>
               <br />
-              <p><strong>price:$1120</strong></p>
+              <p class="price-text"> <strong>price:$1120</strong></p>
             </div>
           </div>
 
           <div class="actions">
             <button class="minus">-</button>
-            <span>1</span>
+            <span class="qty">1</span>
             <button class="plus">+</button>
             <button class="remove">Remove</button>
           </div>
@@ -91,13 +91,13 @@
             <div class="details">
               <h3>Rtx 5070 Graphics Card</h3>
               <br />
-              <p><strong>price:$720</strong></p>
+              <p class="price-text"> <strong>price:$720</strong></p>
             </div>
           </div>
 
           <div class="actions">
             <button class="minus">-</button>
-            <span>1</span>
+            <span class="qty">1</span>
             <button class="plus">+</button>
             <button class="remove">Remove</button>
           </div>
@@ -113,13 +113,13 @@
             <div class="details">
               <h3>Iphone X</h3>
               <br />
-              <p><strong>price:$380</strong></p>
+              <p class="price-text"> <strong>price:$380</strong></p>
             </div>
           </div>
 
           <div class="actions">
             <button class="minus">-</button>
-            <span>1</span>
+            <span class="qty">1</span>
             <button class="plus">+</button>
             <button class="remove">Remove</button>
           </div>
@@ -129,11 +129,11 @@
       <div class="summary">
         <h2>Order Summary</h2>
 
-        <p>Subtotal: $200</p>
-        <p>Shipping: $10</p>
-        <p>Tax: $5</p>
+        <p class="labels">Subtotal: $200</p>
+        <p class="labels">Shipping: $10</p>
+        <p class="labels">Tax: $5</p>
 
-        <h3>Total: $215</h3>
+        <h3 id="Total">Total: $215</h3>
 
        <button class="checkout" onclick="checkout()" <style="color: white;">Proceed to Checkout </button>
       </div>
@@ -177,7 +177,11 @@
     <div class="afterFooter"></div>
     
   </body>
-<script src="cart.js"></script>
-<script src="index.js"></script>
-  
+<script src="index.js"> 
+</script>
+
+<script>
+  initCart();
+  updateTotals();
+</script>
 </html>

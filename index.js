@@ -104,16 +104,66 @@ function Privacy(){
 We use advanced encryption systems to protect your data from any unauthorized access. Rest assured that we will not share your personal information with any third party, except as required by law or with your explicit consent.`;
 }
 
+// cart
+function updateTotals() {
+  const items = document.querySelectorAll(".cart-item");
+  const summary = document.querySelector(".summary");
+  const labels = summary.querySelectorAll(".labels");
+  const totalDisplay = summary.querySelector("#Total");
+  let subtotal = 0;
 
+  items.forEach(function (item) {
+    let priceText = item.querySelector(".price-text").innerText;
+    let priceValue = parseFloat(priceText.replace("price:$", ""));
+    let qtyValue = parseInt(item.querySelector(".qty").innerText);
+    subtotal += priceValue * qtyValue;
+  });
 
+  let shipping = subtotal > 0 ? 10 : 0;
+  let tax = subtotal * 0.025;
+  let finalTotal = subtotal + shipping + tax;
 
+  labels[0].innerText = "Subtotal: $" + subtotal;
+  labels[1].innerText = "Shipping: $" + shipping;
+  labels[2].innerText = "Tax: $" + tax;
+  totalDisplay.innerText = "Total: $" + finalTotal;
 
+  let lastItem = items[items.length - 1];
+  lastItem.style.border = "none";
+}
 
+function initCart() {
+  const items = document.querySelectorAll(".cart-item");
+  items.forEach(function (item) {
+    const minusBtn = item.querySelector(".minus");
+    const plusBtn = item.querySelector(".plus");
+    const removeBtn = item.querySelector(".remove");
+    const qtySpan = item.querySelector(".qty");
 
+    plusBtn.onclick = function () {
+      let qty = parseInt(qtySpan.innerText);
+      qtySpan.innerText = qty + 1;
+      updateTotals();
+    };
 
+    minusBtn.onclick = function () {
+      let qty = parseInt(qtySpan.innerText);
+      if (qty > 1) {
+        qtySpan.innerText = qty - 1;
+        updateTotals();
+      }
+    };
 
+    removeBtn.onclick = function () {
+      item.remove();
+      updateTotals();
+    };
+  });
+}
 
-
+function checkout() {
+  window.open("payment.html", "_self");
+}
 
 
 // Comparison page
