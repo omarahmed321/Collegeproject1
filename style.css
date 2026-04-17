@@ -1538,6 +1538,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
 /* -----------------------------------------Delivery Info page------------------------------------------------ */
 
 main {
+  margin-top:10rem;
   width: 80%;
   height: 70vh;
 
