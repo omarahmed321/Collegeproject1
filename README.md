@@ -1,3 +1,5 @@
+Markdown
+
 # SYMO E-Commerce Interface (Academic Prototype)
 
 An academic **e-commerce storefront prototype** created with **HTML5**, **CSS3**, and vanilla **JavaScript**. It provides UI layouts for browsing consumer electronics, viewing a **shopping cart**, inspecting **user accounts**, and walking through a **checkout flow**. The project serves as an experimental frontend demonstration focused on desktop layout design and fundamental DOM manipulation.
@@ -11,7 +13,6 @@ An academic **e-commerce storefront prototype** created with **HTML5**, **CSS3**
 - [About](#about)
 - [Project Scope and Limitations](#project-scope-and-limitations)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Tech Stack](#tech-stack)
 - [Run Locally](#run-locally)
 - [Project Structure](#project-structure)
@@ -24,7 +25,7 @@ This project was developed as a university coursework prototype to explore multi
 
 This project is an early educational prototype with specific architectural constraints:
 
-- **Desktop-Only Layout**: The stylesheets are designed primarily for desktop screen widths and are **not responsive** on mobile or tablet viewports.
+- **Desktop-Only Layout**: The stylesheets are designed primarily for desktop screen widths and are not responsive on mobile or tablet viewports.
 - **Mocked Functionality**: Advanced transactional features such as server-side authentication, live payment gateways, and backend inventory management are visual mockups without a live database.
 - **Client-Side State**: Cart and account interactions operate on direct DOM updates and static values rather than persistent storage.
 
@@ -35,17 +36,6 @@ This project is an early educational prototype with specific architectural const
 - **Checkout and Payment Interface**: Provide form fields for billing details, shipping addresses, and mock payment methods.
 - **Account Overview**: Present a dedicated account page structure for customer credentials and preferences.
 - **Vanilla DOM Handlers**: Execute simple client-side event listeners and interface navigation via custom scripts.
-
-## Screenshots
-
-### Main Storefront
-![Storefront](screenshots/home.png)
-
-### Shopping Cart Page
-![Shopping Cart](screenshots/cart.png)
-
-### Payment Layout
-![Payment View](screenshots/payment.png)
 
 ## Tech Stack
 
@@ -60,3 +50,28 @@ Clone the repository:
 ```bash
 git clone [https://github.com/omarahmed321/Collegeproject.git](https://github.com/omarahmed321/Collegeproject.git)
 cd Collegeproject
+
+Run the application:
+
+Because this is a static project, you can open index.html directly in any web browser, or serve it using a local HTTP server:
+Bash
+
+# Using Python
+python3 -m http.server 3000
+
+# Or using Node.js
+npx serve .
+
+Navigate to http://localhost:3000 or double-click index.html.
+Project Structure
+Plaintext
+
+Collegeproject/
+├── css/                  # Layout stylesheets and styling
+├── js/                   # Client-side scripts
+│   └── index.js          # DOM listeners and UI handlers
+├── Acccount.html         # User account layout
+├── cart.html             # Cart view layout
+├── index.html            # Main storefront landing view
+├── payment.html          # Checkout and mock payment layout
+└── README.md             # Project documentation
