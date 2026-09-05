@@ -1,6 +1,6 @@
-Markdown
-
 # SYMO E-Commerce Interface (Academic Prototype)
+
+**Live Demo:** [omarahmed321.github.io/Collegeproject](https://omarahmed321.github.io/Collegeproject/)
 
 An academic **e-commerce storefront prototype** created with **HTML5**, **CSS3**, and vanilla **JavaScript**. It provides UI layouts for browsing consumer electronics, viewing a **shopping cart**, inspecting **user accounts**, and walking through a **checkout flow**. The project serves as an experimental frontend demonstration focused on desktop layout design and fundamental DOM manipulation.
 
@@ -50,22 +50,25 @@ Clone the repository:
 ```bash
 git clone [https://github.com/omarahmed321/Collegeproject.git](https://github.com/omarahmed321/Collegeproject.git)
 cd Collegeproject
+```
 
 Run the application:
 
-Because this is a static project, you can open index.html directly in any web browser, or serve it using a local HTTP server:
-Bash
+Because this is a static project, you can open `index.html` directly in any web browser, or serve it using a local HTTP server:
 
+```bash
 # Using Python
 python3 -m http.server 3000
 
 # Or using Node.js
 npx serve .
+```
 
-Navigate to http://localhost:3000 or double-click index.html.
-Project Structure
-Plaintext
+Navigate to `http://localhost:3000` or double-click `index.html`.
 
+## Project Structure
+
+```text
 Collegeproject/
 ├── css/                  # Layout stylesheets and styling
 ├── js/                   # Client-side scripts
@@ -75,3 +78,4 @@ Collegeproject/
 ├── index.html            # Main storefront landing view
 ├── payment.html          # Checkout and mock payment layout
 └── README.md             # Project documentation
+```
