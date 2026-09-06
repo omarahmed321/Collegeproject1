@@ -1,6 +1,6 @@
 # SYMO E-Commerce Interface (Academic Prototype)
 
-**Live Demo:** [omarahmed321.github.io/Collegeproject](https://omarahmed321.github.io/Collegeproject/)
+**Live Demo:** [omarahmed321.github.io/Collegeproject](https://omarahmed321.github.io/ecommerce-website/)
 
 An academic **e-commerce storefront prototype** created with **HTML5**, **CSS3**, and vanilla **JavaScript**. It provides UI layouts for browsing consumer electronics, viewing a **shopping cart**, inspecting **user accounts**, and walking through a **checkout flow**. The project serves as an experimental frontend demonstration focused on desktop layout design and fundamental DOM manipulation.
 
